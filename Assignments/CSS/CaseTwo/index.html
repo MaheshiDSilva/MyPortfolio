@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Case 02</title>
+    <link rel="stylesheet"href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/font-awesome/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        header{
+            position: relative;
+            height: 90px;
+            box-shadow: -2px 6px 9px -4px #917a7a;
+            color: #8a4f4f;
+        }
+        header>img{
+            width: 150px;
+            padding: 0 0 0 18px;
+            margin-top: 20px;
+
+        }
+        header>nav>ul{
+            position: absolute;
+            right: 30px;
+            bottom: 0;
+            font-size: 21px;
+            list-style: none;
+            margin: 34px;
+            font-family: 'Signika', sans-serif;
+
+        }
+        header>nav>ul>li{
+            padding: 0 10px 0 10px;
+            display: inline-block;
+        }
+        header>nav>ul>li>i{
+            color: darkblue;
+            margin-right: 7px;
+
+        }
+
+        body>main{
+            position: relative;
+
+        }
+        body>main>nav{
+            width: 270px;
+            background-color: #8400ff;
+            position: absolute;
+            top: 0px;
+            bottom: 0;
+            color: white;
+        }
+        body>main>nav>ul{
+            list-style: none;
+            font-size: 22px;
+            margin-top: 39px;
+            font-family: 'Signika', sans-serif;
+        }
+        body>main>nav>ul>li {
+            padding-bottom: 30px;
+            color: white;
+        }
+        body>main>nav>ul>li>a{
+            text-decoration: none;
+            color: white;
+        }
+        body>main>section{
+            margin-left: 270px;
+            padding: 10px;
+        }
+        main>nav>ul>li>i{
+            margin-right: 7px;
+
+        }
+
+        main>section>section{
+            border: 2px solid black;
+            position: relative;
+            height: 300px;
+        }
+        main>section>section>div{
+            height: 100%;
+            width: calc(100%/3);
+            position: absolute;
+            background: url("img/Happy-New-Year_9-1024x1024.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        main>section>section>div:nth-child(1){
+            left: 0;
+        }
+        main>section>section>div:nth-child(2){
+            left: calc(100%/3);
+        }
+        main>section>section>div:nth-child(3){
+            right: 0;
+        }
+
+
+
+        /*::-webkit-scrollbar-thumb{*/
+        /*    background: red;*/
+        /*}*/
+        /*::-webkit-scrollbar-track{*/
+        /*    background: red;*/
+        /*    width: 20px;*/
+        /*}*/
+
+
+        footer{
+            height: 60px;
+            background: gray;
+        }
+        footer>p{
+            font-weight: bold;
+            color: white;
+            padding-top: 10px;
+            text-align: center;
+            margin-top: 0px;
+        }
+        header>nav>ul>li>a{
+            text-decoration: none;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/Ijse.png" width="150px">
+        <nav>
+            <ul>
+                <li><i class="fa-solid fa-house"></i><a href="10_Absolute_Measurement_Units.html">Home</a></li>
+                <li><i class="fa-solid fa-globe"></i><a href="#">Service</a></li>
+                <li><i class="fa-solid fa-address-book"></i><a href="#">Contacts</a></li>
+                <li><i class="fa-solid fa-address-card"></i><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><i class="fa-solid fa-house"></i><a href="10_Absolute_Measurement_Units.html">Home</a></li>
+                <li><i class="fa-solid fa-globe"></i><a href="#">Service</a></li>
+                <li><i class="fa-solid fa-address-book"></i><a href="#">Contacts</a></li>
+                <li><i class="fa-solid fa-address-card"></i><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <section>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis culpa error eum ex illo ipsa magni voluptatem!
+                Cum eligendi harum hic ipsum iusto, magni minima nisi nostrum, quos rem voluptate.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis culpa error eum ex illo ipsa magni voluptatem!
+                Cum eligendi harum hic ipsum iusto, magni minima nisi nostrum, quos rem voluptate.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis culpa error eum ex illo ipsa magni voluptatem!
+                Cum eligendi harum hic ipsum iusto, magni minima nisi nostrum, quos rem voluptate.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis culpa error eum ex illo ipsa magni voluptatem!
+                Cum eligendi harum hic ipsum iusto, magni minima nisi nostrum, quos rem voluptate.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis culpa error eum ex illo ipsa magni voluptatem!
+                Cum eligendi harum hic ipsum iusto, magni minima nisi nostrum, quos rem voluptate.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis culpa error eum ex illo ipsa magni voluptatem!
+                Cum eligendi harum hic ipsum iusto, magni minima nisi nostrum, quos rem voluptate.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis culpa error eum ex illo ipsa magni voluptatem!
+                Cum eligendi harum hic ipsum iusto, magni minima nisi nostrum, quos rem voluptate.</p>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis culpa error eum ex illo ipsa magni voluptatem!
+                Cum eligendi harum hic ipsum iusto, magni minima nisi nostrum, quos rem voluptate.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores beatae dignissimos
+                eum facere facilis hic libero modi provident quaerat quam quasi repudiandae sequi tempora tenetur veniam
+                vero voluptate?</p>
+            <p>Eaque error incidunt laborum laudantium modi natus nisi quos rerum sint voluptatum! A aut consequuntur
+                delectus hic id laboriosam magni molestiae natus nesciunt nihil praesentium quibusdam repellendus,
+                reprehenderit sed voluptatem!</p>
+            <p>Ab commodi cumque dicta dolore dolorem in ipsa ipsum laborum molestias numquam quo, saepe velit. A beatae
+                commodi eaque esse, et ipsa iure libero neque perferendis quaerat, quisquam tempora vitae!</p>
+            <p>A aliquid amet aperiam atque dolore dolorum ea eaque eius expedita, fuga fugiat fugit impedit, labore
+                magni nam nesciunt nihil obcaecati placeat praesentium quam quia quibusdam sed similique sit
+                suscipit!</p>
+            <p >Aliquid beatae, commodi corporis doloribus eius excepturi explicabo inventore nemo, optio perferendis
+                praesentium quo repellat sint sunt tempora velit voluptas? Dolore incidunt itaque nesciunt porro
+                provident qui vero, voluptatem? Temporibus.</p>
+
+
+        </section>
+    </main>
+    <footer>
+        <p>Developed by IJSE &copy;</p>
+    </footer>
+</body>
+</html>
