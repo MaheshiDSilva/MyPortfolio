@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Case 03</title>
+    <link rel="stylesheet"href="../assets/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body>main>section{
+            position: relative;
+            height: 200vh;
+        }
+
+        body>main>section>div>p{
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 23px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        body>main>section>div:nth-child(1){
+            position: fixed;
+            border: 12px solid gray;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 216px;
+            height: 220px;
+            border-radius: 120px;
+            z-index: 2;
+        }
+        body>main>section>div:nth-child(2){
+            position: fixed;
+            border: 15px solid red;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            /*width: 220px;*/
+            /*height: 220px;*/
+            /*border-radius: 120px;*/
+            width: 190px;
+            height: 190px;
+            border-radius: 100%;
+            z-index: 2;
+        }
+
+        body>main>section>div:nth-child(3){
+            position: absolute;
+            left: 0;
+            right: 0;
+            /*top: 0;*/
+            margin: auto;
+            width: 190px;
+            height: 190px;
+            border-radius: 100%;
+            background-color: purple;
+            z-index: 1;
+        }
+        body>main>section>div:nth-child(4){
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 190px;
+            height: 190px;
+            border-radius: 100%;
+            background-color: #1690b9;
+            z-index: 1;
+
+        }
+        body>main>section>div:nth-child(5){
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 190px;
+            height: 190px;
+            border-radius: 100%;
+            background-color: coral;
+            z-index: 1;
+        }
+        body>main>section>div:nth-child(4)>p{
+
+            padding-top: 32px;
+            /*padding-top: 31px;*/
+        }
+        body>main>section>div:nth-child(5)>p{
+            padding-top: 51px;
+
+        }
+        body>main>section>div:nth-child(3)>p{
+            padding-top: 54px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <section></section>
+        <section>
+            <div></div>
+            <div></div>
+
+            <div>
+                <p>Hello</p>
+            </div>
+            <div>
+                <p>Institute of Software Engineering</p>
+            </div>
+            <div>
+                <p>Welcome To</p>
+            </div>
+        </section>
+        <section></section>
+    </main>
+</body>
+
+</html>
