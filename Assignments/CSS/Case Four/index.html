@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Case 04</title>
+    <link rel="stylesheet"href="../assets/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body>main>section{
+            position: relative;
+            height: 100vh;
+        }
+        body>main>section>div{
+            position: sticky;
+            height: 70px;
+            top: 0;
+
+        }
+        body>main>section>div>p{
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+            padding-left: 9px;
+            padding-top: 21px;
+            margin-top: 0;
+        }
+        body>main>section>aside{
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            font-size: 99px;
+            text-align: center;
+            margin-top: 240px;
+        }
+        body>main>section:nth-child(1){
+            background-color: white;
+        }
+        body>main>section:nth-child(2){
+            background-color: #57a6ea;
+        }
+        body>main>section:nth-child(3){
+            background-color: #8a6963;
+        }
+        body>main>section:nth-child(4){
+            background-color: #ff3c00;
+        }
+        body>main>section:nth-child(1)>div{
+            background-color: #e84242;
+        }
+        body>main>section:nth-child(2)>div{
+            background-color: darkblue;
+        }
+        body>main>section:nth-child(3)>div{
+           background-color: #232020;
+        }
+        body>main>section:nth-child(4)>div{
+            background-color: #4f2f2f;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div>
+                <p>Card 1</p>
+            </div>
+            <aside>
+                <p>Hello</p>
+            </aside>
+        </section>
+        <section>
+            <div>
+                <p>Card 2</p>
+            </div>
+            <aside>
+                <p>How</p>
+            </aside>
+        </section>
+        <section>
+            <div>
+                <p>Card 3</p>
+            </div>
+            <aside>
+                <p>Are</p>
+            </aside>
+        </section>
+        <section>
+            <div>
+                <p>Card 4</p>
+            </div>
+            <aside>
+                <p>You..!</p>
+            </aside>
+        </section>
+    </main>
+</body>
+</html>
