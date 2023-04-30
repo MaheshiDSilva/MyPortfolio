@@ -34,10 +34,13 @@
 <style>
     /*header start*/
     header {
-        position: relative;
-        height: 110px;
+        position: fixed;
+        height: 80px;
         background-color: #0A2640;
-
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
     }
 
     header > aside > img {
@@ -45,7 +48,7 @@
         padding-left: 26px;
         margin-top: 0px;
         padding-bottom: 0px;
-        padding-top: 26px;
+        padding-top: 13px;
     }
 
     header > nav > menu {
@@ -57,7 +60,7 @@
         font-family: 'Poppins', sans-serif;
         margin-bottom: 0px;
         margin-top: 0px;
-        padding-bottom: 42px;
+        padding-bottom: 26px;
     }
 
     header > nav > menu > li {
@@ -69,13 +72,16 @@
         text-decoration: none;
         color: white;
     }
+    header > nav > menu > li > a:hover{
+        color: #00abf0;
+    }
 
     /*header end*/
 
     /*main start*/
     /*1st section start*/
     body > main > section:nth-child(1) > section {
-        height: 640px;
+        height: 100vh;
         background-color: #0A2640;
         margin-top: 0;
         margin-bottom: 0;
@@ -88,7 +94,7 @@
         font-family: 'Quando', serif;
         font-size: 57px;
         color: #E86DD4;
-        padding-top: 133px;
+        padding-top: 254px;
         padding-left: 66px;
     }
 
@@ -115,7 +121,7 @@
         height: 80px;
         width: 200px;
         padding-bottom: 0px;
-        padding-top: 200px;
+        padding-top: 159px;
         padding-left: 200px;
     }
 
@@ -152,8 +158,8 @@
 
     body > main > section:nth-child(2) > section > aside {
         position: absolute;
-        top: 125px;
-        left: 240px;
+        top: 133px;
+        left: 210px;
         width: 360px;
         height: 440px;
         clip-path: ellipse(49% 43% at 49% 52%);
@@ -184,7 +190,7 @@
     body > main > section:nth-child(2) > section > article {
         position: absolute;
         width: 689px;
-        height: 326px;
+        height: 348px;
         top: 150px;
         right: 180px;
         border-radius: 50px;
@@ -192,33 +198,35 @@
         padding-left: 15px;
         padding-top: 20px;
         padding-top: 34px;
-        padding-right: 28px;
+        /*padding-right: 28px;*/
+        padding-right: 50px;
         padding-bottom: 41px;
         padding-left: 117px;
         color: white;
+        line-height: 1.5;
 
     }
 
     body > main > section:nth-child(2) > section > article > p:nth-child(1) {
-        font-size: 28px;
+        font-size: 26px;
         font-family: 'Poppins', sans-serif;
 
     }
 
     body > main > section:nth-child(2) > section > article > p:nth-child(2) {
         position: relative;
-        font-size: 25px;
+        font-size: 24px;
         bottom: -50px;
         right: -200px;
         font-family: 'Poppins', sans-serif;
         font-weight: bold;
-        width: 190px;
-        height: 40px;
-        padding-left: 26px;
-        padding-top: 13px;
+        width: 194px;
+        height: 47px;
+        padding-left: 30px;
+        padding-top: 10px;
         border-radius: 50px;
         background-color: #91528E;
-        margin-top: 78px;
+        margin-top: 58px;
 
     }
 
@@ -342,10 +350,27 @@
     body > main > section:nth-child(4) > section > div {
         position: absolute;
         bottom: 74px;
-        left: 16px;
-        padding-top: 117px;
-        padding-left: 400px;
+        left: -9px;
+        padding-top: 63px;
+        padding-left: 372px;
+        padding-bottom: 0px;
+
     }
+    body > main > section:nth-child(4) > section > div>button{
+        font-size: 25px;
+        color: #DA1EBC;
+        background-color: #92DEEE;
+        border: 3px solid #b70898;
+        border-radius: 40px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+        width: 184px;
+        height: 47px;
+
+
+
+    }
+
 
     /*4th section end*/
 
@@ -413,7 +438,7 @@
         font-family: 'Poppins', sans-serif;
         color: #0A2640;
         margin: 0;
-        font-weight: bold;
+        font-weight: bolder;
         padding-top: 24px;
         padding-left: 25px;
         padding-bottom: 27px;
@@ -438,7 +463,19 @@
     body > main > section:nth-child(6) > section > aside {
         position: absolute;
         bottom: 60px;
-        left: 495px;
+        left: 462px;
+    }
+    body > main > section:nth-child(6) > section > aside>div>button{
+        font-size: 23px;
+        color: #121563;
+        background-color: #08E7F6;
+        border: 3px solid #1E1BC9;
+        border-radius: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        height: 43px;
+        width: 184px;
+        height: 47px;
     }
 
     body > main > section:nth-child(6) > section > article > div {
@@ -454,6 +491,7 @@
         border-radius: 50px;
     }
 
+
     body > main > section:nth-child(6) > section > article > div:nth-child(1) {
         background-color: #FF00E5;
         color: white;
@@ -466,6 +504,7 @@
         color: white;
         box-shadow: 15px 15px 16px 10px #777171;
         align-self: center;
+
     }
 
     body > main > section:nth-child(6) > section > article > div:nth-child(3) {
@@ -506,7 +545,7 @@
         padding-left: 40px;
         margin-top: 0px;
         margin-bottom: 0px;
-        color: white;
+        color: #cacace;
         padding-top: 8px
     }
 
@@ -515,11 +554,17 @@
         padding-left: 219px;
         padding-top: 95px;
     }
+    footer > section > address{
+        margin-left: 56px
+    }
+    footer>section>address>aside{
+        padding-left: 66px;
+    }
 
     footer > section > address > ul > li > a {
         text-decoration: none;
         color: #03FF1C;
-        font-weight: bold;
+        font-weight: 13;
     }
 
     footer > section > address > ul > li {
@@ -527,7 +572,7 @@
         font-size: 25px;
         font-family: 'Poppins', sans-serif;
         color: #03FF1C;
-        font-weight: bold;
+        font-weight: 13;
     }
 
     footer > section > address > ul > li:nth-child(1) {
@@ -541,20 +586,21 @@
 
     footer > section > article {
         top: 206px;
-        right: 220px;
+        right: 297px;
         position: absolute;
         font-family: 'Poppins', sans-serif;
         color: white;
+        font-size: 19px;
     }
 
     footer > section > aside {
         position: absolute;
-        height: 70px;
-        background: gray;
+        height: 60px;
+        background: #3f5365;
         bottom: 0;
         right: 0;
         left: 0;
-        font-size: 18px;
+        font-size: 15px;
     }
 
     footer > section > aside > p {
@@ -607,6 +653,37 @@
         flex-grow: 1;
         background-position: center;
         background-size: cover;
+    }
+    #name{
+        height: 40px;
+        width: 360px;
+        border-radius: 10px;
+        background-color: #9c9ea1;
+        margin-bottom: 15px;
+    }
+    #email{
+        height: 40px;
+        width: 360px;
+        border-radius: 10px;
+        background-color: #9c9ea1;
+        margin-bottom: 15px;
+    }
+    #txtIntro{
+        width: 360px;
+        height: 100px;
+        border-radius: 10px;
+        background-color: #9c9ea1;
+    }
+    #submit{
+        height: 38px;
+        width: 165px;
+        font-weight: bolder;
+        background-color:#03F0FF ;
+        color: #121563;
+        border-radius: 40px;
+        border: 2px solid white;
+        margin-top: 15px;
+        padding-left: 20px;
     }
 
     /*footer end*/
@@ -887,7 +964,7 @@
             </ul>
             <aside>
                 <div>
-                    <img src="img/whitePhone.png" width="50px">
+                    <img src="img/whitePhone.png" width="45px">
                 </div>
 
                 <div>
@@ -922,7 +999,7 @@
                 <label for="txtIntro">Comment :<br></label>
                 <textarea id="txtIntro" rows="5"></textarea>
                 <br>
-                <input type="submit" value="send comment">
+                <input id="submit" value="send comment">
             </form>
         </article>
         <aside>
