@@ -497,6 +497,9 @@
         width: 184px;
         height: 47px;
     }
+    body > main > section:nth-child(4) > section > div>button:hover{
+        cursor: pointer;
+    }
     /*4th section end*/
 
     /*5th section start*/
@@ -602,6 +605,9 @@
         width: 184px;
         height: 47px;
     }
+    body > main > section:nth-child(6) > section > aside>div>button:hover{
+        cursor: pointer;
+    }
 
     body > main > section:nth-child(6) > section > article > div {
         height: 200px;
@@ -660,7 +666,6 @@
         padding-top: 28px;
         padding-left: 35px;
         padding-bottom: 27px;
-
     }
 
     footer > section > section > p {
@@ -669,7 +674,7 @@
         padding-left: 40px;
         margin-top: 0px;
         margin-bottom: 0px;
-        color: #cacace;
+        color: #d7d7e3;
         padding-top: 8px
     }
 
@@ -678,9 +683,7 @@
         padding-left: 219px;
         padding-top: 95px;
     }
-    footer > section > address{
-        margin-left: 56px
-    }
+
     footer>section>address>aside{
         padding-left: 66px;
     }
@@ -691,9 +694,14 @@
     }
     footer > section > address > ul > li {
         list-style: none;
-        font-size: 25px;
+        font-size: 23px;
         font-family: 'Poppins', sans-serif;
         color: #0e98e5;
+    }
+    footer > section > address > ul > li>i{
+        color: #b0c1ee;
+        padding-right: 26px;
+        font-size: 35px;
     }
 
     footer > section > address > ul > li:nth-child(1) {
@@ -702,7 +710,10 @@
     }
 
     footer > section > address > ul > li:nth-child(2) {
-        padding-bottom: 39px;
+        padding-bottom: 29px;
+    }
+    footer > section > address > ul > li:nth-child(3):hover{
+        cursor: pointer;
     }
 
     footer > section > article {
@@ -730,33 +741,6 @@
         padding-top: 21px;
         text-align: center;
         margin-top: 0px;
-    }
-
-    footer > section > address > aside {
-        position: absolute;
-        display: flex;
-        top: 241px;
-        left: 87px;
-        height: 180px;
-        width: 100px;
-        flex-direction: column;
-    }
-
-    footer > section > address > aside > div {
-        height: 100%;
-        flex-grow: 1;
-    }
-
-    footer > section > address > aside > div:nth-child(1) {
-        padding-left: 43px;
-        padding-right: 18px;
-        padding-bottom: 16px;
-
-    }
-
-    footer > section > address > aside > div:nth-child(2) {
-        padding-left: 40px;
-        padding-right: 18px;
     }
 
     footer > section > div {
@@ -798,7 +782,7 @@
         background-color:transparent;
         border: 2px solid #a9a4a4;
     }
-    #submit{
+    .submit{
         height: 38px;
         width: 100px;
         font-weight: bolder;
@@ -809,7 +793,9 @@
         margin-top: 15px;
         padding-left: 30px;
     }
-
+    .submit:hover{
+        cursor: pointer;
+    }
     /*footer end*/
 
 </style>
@@ -823,7 +809,7 @@
     <nav>
         <menu>
             <li><a href="">Home</a></li>
-            <li><a href="aboutme">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -853,7 +839,6 @@
             </article>
             <aside>
                 <img alt="my profile picture" height="590px" src="img/programmer%203.jpeg" width="780px">
-
             </aside>
         </section>
 
@@ -862,7 +847,7 @@
     <!-- section 2 -->
     <section>
         <section>
-            <h1><dfn id="aboutme"></dfn>about me</h1>
+            <h1><dfn id="about"></dfn>about me</h1>
             <aside>
                 <img src="img/my%20image.jpg" width="360">
             </aside>
@@ -1082,23 +1067,10 @@
         </section>
         <address>
             <ul>
-                <li><a href="tel:0703631585">0760188399</a></li>
-                <li><a href="mailto:maheshi99silva@gmail.com">maheshi99silva@gmail.com</a></li>
-                <li>Udukumbura, Ahangama</li>
+                <li><i class="fa-solid fa-phone"></i><a href="tel:0703631585">0760188399</a></li>
+                <li><i class="fa-solid fa-envelope"></i><a href="mailto:maheshi99silva@gmail.com">maheshi99silva@gmail.com</a></li>
+                <li><i class="fa-solid fa-location-dot"></i>Udukumbura, Ahangama</li>
             </ul>
-            <aside>
-                <div>
-                    <img src="img/whitePhone.png" width="45px">
-                </div>
-
-                <div>
-                    <img src="img/email-removebg-preview.png" width="50px">
-                </div>
-
-                <div>
-                    <img src="img/location-removebg-preview.png" width="130px">
-                </div>
-            </aside>
         </address>
         <div>
             <div>
@@ -1123,7 +1095,7 @@
                 <label for="txtIntro">Comment :<br></label>
                 <textarea id="txtIntro" rows="5"></textarea>
                 <br>
-                <input id="submit" value="submit">
+                <input class="submit" value="submit">
             </form>
         </article>
         <aside>
