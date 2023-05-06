@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition Case 01</title>
+    <link href="../assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/font-awesome/fontawesome-free-6.4.0-web/css/all.min.css" rel="stylesheet">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <style>
+        body > section {
+            position: relative;
+            width: 300px;
+            height: 500px;
+            flex-direction: column;
+            justify-content: space-around;
+            /*background: purple;*/
+            display: flex;
+            top: 130px;
+            right: 230px;
+
+        }
+
+        body > section > div {
+            position: relative;
+            height: 50px;
+            transition: all 2s;
+            background: #9837ef;
+            left: 0;
+            color: white;
+            box-shadow: 3px 3px 4px 2px #858383;
+        }
+
+        section > div:hover {
+            left: 230px;
+            transition: all 2s;
+        }
+
+        div > h1 {
+            padding-left: 25px;
+            margin: 0;
+            font-size: 20px;
+            display: inline-block;
+            padding-top: 10px;
+        }
+
+        body > section > div > i {
+            color: white;
+            font-size: 22px;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <h1>Menu One <i class="fa-solid fa-address-book"></i></h1>
+    </div>
+    <div>
+        <h1>Menu Two <i class="fa-solid fa-truck"></i></h1>
+    </div>
+    <div>
+        <h1>Menu Three <i class="fa-solid fa-book-atlas"></i></h1>
+    </div>
+    <div>
+        <h1>Menu Four <i class="fa-solid fa-house"></i></h1>
+    </div>
+    <div>
+        <h1>Menu Five <i class="fa-solid fa-cart-plus"></i></h1>
+    </div>
+</section>
+</body>
+</html>
