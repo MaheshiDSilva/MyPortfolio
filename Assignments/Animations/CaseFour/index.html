@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition Case 04</title>
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <style>
+        body > section {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 2px solid deeppink;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 100%;
+            animation: testOne;
+            animation-direction: normal;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        section:hover {
+            animation-play-state: inherit;
+        }
+
+        @keyframes testOne {
+            from {
+                width: 1px;
+                height: 1px;
+            }
+            to {
+                width: 300px;
+                height: 300px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<section>
+</section>
+</body>
+</html>
