@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition Case 02</title>
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+  <style>
+        body>section {
+            width: 100vw;
+            height: 100vh;
+            background: blue;
+            position: relative;
+        }
+
+        body>section > div::before {
+            position: absolute;
+            content: " ";
+            width: 320px;
+            height: 320px;
+            border-radius: 100%;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            margin: auto;
+            background: gray;
+            border: 18px solid white;
+            border-top-color: red;
+            transform: rotate(0deg);
+        }
+
+        body>section > div > p {
+            position: absolute;
+            color: white;
+            height: max-content;
+            width: 100%;
+            text-align: center;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            font-size: 42px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        body>section > div > p:hover{
+            cursor: pointer;
+        }
+
+        body>section > div:hover::before {
+            cursor: pointer;
+            transition: all 2s;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+
+
+<body>
+<section>
+    <div>
+        <p>RWAD</p>
+    </div>
+</section>
+</body>
+</html>
