@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition Case 05</title>
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+
+    <style>
+
+        body > main {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 800px;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        body > main > section {
+            position: relative;
+            left: 0;
+            height: 100%;
+            width: 400%;
+            display: flex;
+            animation: 6s slide infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+
+        }
+
+        body > main > section > div {
+            width: 100%;
+        }
+
+        body > main > section > div:nth-child(1) {
+            background: url("img/warerfall1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body > main > section > div:nth-child(2) {
+            background: url("img/sunset.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body > main > section > div:nth-child(3) {
+            background: url("img/desertnew.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body > main > section > div:nth-child(4) {
+            background: url("img/snownew.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes slide {
+            0%, 20% {
+                margin-left: 0;
+            }
+            25%, 45% {
+                margin-left: -100%;
+            }
+            50%, 70% {
+                margin-left: -200%;
+            }
+            75%, 100% {
+                margin-left: -300%;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+</body>
+</html>
