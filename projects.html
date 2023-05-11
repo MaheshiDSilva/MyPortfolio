@@ -48,6 +48,7 @@
             flex-direction: row;
             justify-content: space-around;
             grid-gap: 70px;
+
         }
 
         body > section > aside > div {
@@ -60,6 +61,12 @@
             border-radius: 50px;
             align-self: center;
             position: relative;
+            transition: 1s;
+        }
+
+        body > section > aside>div:hover{
+            transform: scale(1.1);
+            z-index: 2;
         }
 
         body > section > aside > div:nth-child(1) {
@@ -120,6 +127,7 @@
         }
 
         body > section > article > div > div {
+            position: relative;
             border-radius: 50px;
             border: 1px solid darkblue;
             box-shadow: 4px 4px 5px 5px #6161c4;
@@ -143,8 +151,6 @@
             bottom: 15px;
             padding-top: 6px;
             text-align: center;
-
-
         }
 
         body > section > article > div > div:nth-child(1) {
@@ -247,13 +253,17 @@
             background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
         }
 
+        span{
+            color: #159f0b;
+        }
+
 
     </style>
 </head>
 
 <body>
 <section>
-    <h1>projects</h1>
+    <h1><span>p</span>rojects</h1>
     <aside>
         <div><p>Hostel Management System</p></div>
         <div></div>
@@ -261,7 +271,7 @@
     </aside>
     <br><br>
     <article>
-        <h1>assignments</h1>
+        <h1><span>a</span>ssignments</h1>
         <div>
             <div>
                 <p>Assignment 01</p>

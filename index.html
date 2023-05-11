@@ -25,6 +25,9 @@
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
 
     <style>
         /*header start*/
@@ -86,26 +89,53 @@
             position: relative;
         }
 
-        body > main > section:nth-child(1) > section > article > p:nth-child(1) {
+        body > main > section:nth-child(1) > section > article > p {
             margin-top: 0;
             font-family: 'Quando', serif;
-            font-size: 57px;
-            color: #E86DD4;
-            padding-top: 254px;
-            padding-left: 66px;
-            background: linear-gradient(265.52deg, #E836CB 43.47%, rgba(50, 247, 247, 0) 227.09%, rgba(4, 249, 249, 0) 235.25%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
-
+            font-size: 35px;
+            color: whitesmoke;
+            padding-top: 220px;
+            padding-left: 80px;
         }
 
-        body > main > section:nth-child(1) > section > article > p:nth-child(2) {
+        body > main > section:nth-child(1) > section > article > h1 {
+            position: relative;
+            font-size: 88px;
+            padding-left: 80px;
+            color: #0A2640;
+            -webkit-text-stroke: 1px #383d52;
+            margin-top: 10px;
+            margin-bottom: 42px;
+            font-family: 'Castoro Titling', cursive;
+        }
+
+        body > main > section:nth-child(1) > section > article > h1::before {
+            content: attr(data-text);
+            position: absolute;
+            width: 0;
+            height: 100%;
+            color: #d000ff;
+            -webkit-text-stroke: 0px #383d52;
+            border-right: 3px solid #d000ff;
+            overflow: hidden;
+            animation: animate 6s linear infinite;
+        }
+
+        @keyframes animate {
+            0%, 10%, 100% {
+                width: 0;
+            }
+            70%, 90% {
+                width: 29%;
+            }
+        }
+
+        body > main > section:nth-child(1) > section > article > h2 {
             margin-top: 0;
             font-family: 'Hammersmith One', sans-serif;
-            font-size: 50px;
-            color: #E86DD4;
-            padding-left: 66px;
+            font-size: 40px;
+            color: #f5b5ed;
+            padding-left: 80px;
 
         }
 
@@ -121,18 +151,27 @@
         body > main > section:nth-child(1) > section > article > div {
             position: relative;
             display: flex;
-            height: 80px;
-            width: 200px;
+            height: 50px;
+            width: 210px;
             padding-bottom: 0px;
-            padding-top: 159px;
-            padding-left: 200px;
+            left: 200px;
+            top: 120px;
+            gap: 25px;
         }
 
         body > main > section:nth-child(1) > section > article > div > div {
             height: 100%;
             flex-grow: 1;
-            background-position: center;
-            background-size: cover;
+            border-radius: 100%;
+            border: 2px solid #00d0ff;
+            background: #00d0ff;
+
+        }
+
+        body > main > section:nth-child(1) > section > article > div > div > a > i {
+            font-size: 40px;
+            padding-left: 7px;
+            padding-top: 25px;
         }
 
         /*1st section end*/
@@ -186,8 +225,10 @@
         body > main > section:nth-child(2) > section > div > div {
             height: 100%;
             flex-grow: 1;
-            background-position: center;
-            background-size: cover;
+        }
+
+        body > main > section:nth-child(2) > section > div > div > a > i {
+            font-size: 43px;
         }
 
         body > main > section:nth-child(2) > section > article {
@@ -335,17 +376,6 @@
             padding-top: 58px;
             background-color: white;
         }
-
-        /*body > main > section:nth-child(3) > section > aside > aside:nth-child(2) > div > div:nth-child(1)::before{*/
-        /*    position: absolute;*/
-        /*    border-top-color: black;*/
-        /*    transform: rotate(0deg);*/
-        /*}*/
-        /*body > main > section:nth-child(3) > section > aside > aside:nth-child(2) > div > div:nth-child(1):hover::before{*/
-        /*    transition: all 2s;*/
-        /*    transform: rotate(360deg);*/
-        /*}*/
-
 
         #arrow2 {
             padding-left: 46px;
@@ -551,15 +581,31 @@
 
         body > main > section:nth-child(4) > section > article {
             position: absolute;
-            top: 92px;
-            right: 20px;
+            top: 145px;
+            right: 45px;
+            animation: testOne;
+            animation-direction: alternate;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        body > main > section:nth-child(4) > section > article:hover {
+            animation-play-state: inherit;
+        }
+
+        @keyframes testOne {
+            from {
+                right: 10px;
+            }
+            to {
+                right: 90px;
+            }
         }
 
         body > main > section:nth-child(4) > section > aside {
             position: relative;
             width: 700px;
             height: 450px;
-            /*border: 2px solid white;*/
             top: 50px;
             left: 100px;
             display: grid;
@@ -660,18 +706,22 @@
 
         body > main > section:nth-child(5) > section > aside > div {
             position: absolute;
+            transition: 1s;
+        }
+
+        body > main > section:nth-child(5) > section > aside > div:hover {
+            transform: scale(1.2);
+            z-index: 2;
         }
 
         body > main > section:nth-child(5) > section > aside > div:nth-child(1) {
             top: 151px;
             left: 200px;
-
         }
 
         body > main > section:nth-child(5) > section > aside > div:nth-child(2) {
             right: 200px;
             top: 151px;
-
         }
 
         body > main > section:nth-child(5) > section > aside > div:nth-child(3) {
@@ -732,7 +782,7 @@
             /*box-shadow: 10px 10px 14px 2px #889bec;*/
         }
 
-        body > main > section:nth-child(6) > section > aside > div > button>a{
+        body > main > section:nth-child(6) > section > aside > div > button > a {
             text-decoration: none;
             color: white;
         }
@@ -758,10 +808,16 @@
             border-radius: 50px;
             align-self: center;
             position: relative;
+            transition: 1s;
+        }
+
+        body > main > section:nth-child(6) > section > article > div:hover {
+            transform: scale(1.1);
+            z-index: 2;
         }
 
         body > main > section:nth-child(6) > section > article > div:nth-child(1) {
-            background: url("img/veggie&fruit.jpg" );
+            background: url("img/veggie&fruit.jpg");
             background-size: cover;
             background-position: center;
             opacity: 0.76;
@@ -902,21 +958,32 @@
             margin-top: 0px;
         }
 
-        footer > section > div {
+        #links {
             position: relative;
             display: flex;
-            height: 80px;
-            width: 200px;
+            height: 55px;
+            width: 210px;
             padding-bottom: 0px;
-            padding-top: 156px;
+            padding-top: 130px;
             padding-left: 200px;
+            gap: 16px;
+
         }
 
-        footer > section > div > div {
+        #links > div {
             height: 100%;
             flex-grow: 1;
-            background-position: center;
-            background-size: cover;
+            /*border: 2px solid white;*/
+            border-radius: 100%;
+            background: black;
+
+
+        }
+
+        #links > div > a > i {
+            font-size: 30px;
+            padding-left: 16px;
+            padding-top: 29px;
         }
 
         #name {
@@ -963,6 +1030,10 @@
 
         /*footer end*/
 
+        span {
+            color: #ff0087;
+        }
+
     </style>
 </head>
 
@@ -989,26 +1060,21 @@
     <section>
         <section>
             <article>
-                <p>Hi, I'm Maheshi</p>
-                <p>i'm a software engineer</p>
+                <p>Hi, I'm </p>
+                <h1 data-text="Maheshi">Maheshi</h1>
+                <h2>i'm a software engineer</h2>
                 <div>
                     <div>
-                        <img usemap="#linkedinMap" alt="linkedIn profile" src="img/white_linkedin.png" width="40">
-                        <map name="linkedinMap">
-                            <area shape="circle" coords="40,40,50" href="https://ijse.com" alt="">
-                        </map>
+                        <a href="https://www.linkedin.com/in/maheshi-de-silva-9b8787264/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in fa-fade fa-xl" style="color: #000000;"></i> </a>
                     </div>
                     <div>
-                        <img usemap="githubMap" alt="github profile" src="img/white_github.png" width="40">
-                        <map name="githubMap">
-                            <area shape="circle" coords="50,40,50" href="https://ijse.com" alt="">
-                        </map>
+                        <a href="https://github.com/MaheshiDSilva" target="_blank"><i
+                                class="fa-brands fa-github fa-fade fa-2xl" style="color: #000000;"></i></a>
                     </div>
                     <div>
-                        <img usemap="whatsappMap" alt="whatsapp profile" src="img/white_whatsapp.png" width="40">
-                        <map name="whatsappMap">
-                            <area shape="circle" coords="40,40,50" href="https://ijse.com" alt="">
-                        </map>
+                        <a href="" target="_blank"><i class="fa-brands fa-whatsapp fa-fade fa-2xl"
+                                                      style="color: #000000;"></i></a>
                     </div>
                 </div>
             </article>
@@ -1022,19 +1088,23 @@
     <!-- section 2 -->
     <section>
         <section>
-            <h1><dfn id="about"></dfn>about me</h1>
+            <h1><dfn id="about"></dfn><span>a</span>bout <span>m</span>e</h1>
             <aside>
                 <img src="img/my%20image.jpg" width="360">
             </aside>
             <div>
                 <div>
-                    <img alt="linkedIn profile" src="img/Teal.png" width="40">
+                    <a href="https://www.linkedin.com/in/maheshi-de-silva-9b8787264/" target="_blank"><i
+                            class="fa-brands fa-linkedin fa-fade fa-xl" style="color: #020202;"></i></a>
                 </div>
                 <div>
-                    <img alt="github profile" src="img/github.png" width="40">
+                    <a href="https://github.com/MaheshiDSilva" target="_blank"><i
+                            class="fa-brands fa-github fa-fade fa-2xl" style="color: #020202;"></i></a>
                 </div>
                 <div>
-                    <img alt="whatsapp profile" src="img/Green.png" width="40">
+                    <a href="" target="_blank"><i class="fa-brands fa-whatsapp fa-fade fa-2xl"
+                                                  style="color: #020202;"></i></a>
+
                 </div>
             </div>
             <article>
@@ -1053,7 +1123,7 @@
     <!-- section 3 -->
     <section>
         <section>
-            <h1><dfn id="education"></dfn>education qualifications</h1>
+            <h1><dfn id="education"></dfn><span>e</span>ducation <span>q</span>ualifications</h1>
             <article></article>
             <div id="circle1"></div>
             <div id="circle2"></div>
@@ -1151,7 +1221,7 @@
     <!-- section 4 -->
     <section>
         <section>
-            <h1><dfn id="skills"></dfn>skills</h1>
+            <h1><dfn id="skills"></dfn><span>s</span>kills</h1>
             <aside>
 
                 <div>
@@ -1168,7 +1238,6 @@
                     <img src="img/html_image-removebg-preview.png" width="130px">
                 </div>
 
-
                 <div>
                     <img src="img/css_image-removebg-preview.png" width="130px">
                 </div>
@@ -1184,7 +1253,7 @@
                 </button>
             </div>
             <article>
-                <img src="img/Screenshot__124_-removebg-preview.png" width="620px">
+                <img src="img/Screenshot__124_-removebg-preview.png" width="530px">
             </article>
 
         </section>
@@ -1193,7 +1262,7 @@
     <!-- section 5 -->
     <section>
         <section>
-            <h1>certificates</h1>
+            <h1><span>c</span>ertificates</h1>
             <aside>
                 <div>
                     <img src="img/java%20certificate.png" width="460px">
@@ -1214,7 +1283,7 @@
     <!-- section 6 -->
     <section>
         <section>
-            <h1><dfn id="projects"></dfn>projects and assignments</h1>
+            <h1><dfn id="projects"></dfn><span>p</span>rojects <span>a</span>nd <span>a</span>ssignments</h1>
             <article>
                 <div>
                     <p> Veggie and Fruit System</p>
@@ -1230,7 +1299,7 @@
             <aside>
                 <div>
                     <button id="favorite styled1"
-                            type="button"><a href="projects.html" >More Projects & Assignments</a>
+                            type="button"><a href="projects.html">More Projects & Assignments</a>
                     </button>
                 </div>
             </aside>
@@ -1241,7 +1310,7 @@
 <footer>
     <section>
         <section>
-            <h1><dfn id="contact"></dfn>contact </h1>
+            <h1><dfn id="contact"></dfn><span>c</span>ontact </h1>
             <p>
                 if you need a service or help from me or want to give a feedback,
                 please leave a comment.
@@ -1249,21 +1318,23 @@
         </section>
         <address>
             <ul>
-                <li><i class="fa-solid fa-phone"></i><a href="tel:0703631585">0760188399</a></li>
+                <li><i class="fa-solid fa-phone"></i><a href="tel:0760188399">0760188399</a></li>
                 <li><i class="fa-solid fa-envelope"></i><a href="mailto:maheshi99silva@gmail.com">maheshi99silva@gmail.com</a>
                 </li>
                 <li><i class="fa-solid fa-location-dot"></i>Udukumbura, Ahangama</li>
             </ul>
         </address>
-        <div>
+        <div id="links">
             <div>
-                <img alt="linkedIn profile" src="img/white_linkedin.png" width="40">
+                <a href="https://www.linkedin.com/in/maheshi-de-silva-9b8787264/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in fa-fade fa-xl" style="color: #ffffff;"></i></a>
             </div>
             <div>
-                <img alt="github profile" src="img/white_github.png" width="40">
+                <a href="https://github.com/MaheshiDSilva" target="_blank"><i class="fa-brands fa-github fa-fade fa-xl"
+                                                                              style="color: #ffffff;"></i></a>
             </div>
             <div>
-                <img alt="whatsapp profile" src="img/white_whatsapp.png" width="40">
+                <a href="" target="_blank"><i class="fa-brands fa-whatsapp fa-fade fa-2xl" style="color: #ffffff;"></i></a>
             </div>
         </div>
         <article>
