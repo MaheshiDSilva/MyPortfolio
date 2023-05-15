@@ -1,0 +1,238 @@
+body > section {
+    height: 100vh;
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 0;
+    bottom: 0;
+    position: relative;
+}
+
+body > section > h1 {
+    font-size: 38px;
+    font-family: 'Poppins', sans-serif;
+    color: #ff00f5;
+    margin: 0;
+    font-weight: bold;
+    padding-top: 28px;
+    padding-left: 35px;
+    padding-bottom: 27px;
+}
+
+body > section > aside {
+    position: relative;
+    left: 60px;
+    top: 10px;
+    height: 500px;
+    width: 1400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-gap: 70px;
+
+}
+
+body > section > aside > div {
+    height: 350px;
+    width: 250px;
+    flex-grow: 3;
+    text-align: center;
+    padding-top: 60px;
+    grid-gap: 2px;
+    border-radius: 50px;
+    align-self: center;
+    position: relative;
+    transition: 1s;
+}
+
+body > section > aside>div:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+body > section > aside > div:nth-child(1) {
+    background: url("img/hostel1 m.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    box-shadow: 15px 15px 16px 10px #777477;
+
+}
+
+body > section > aside > div:nth-child(2) {
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+    box-shadow: 15px 15px 16px 10px #777477;
+}
+
+body > section > aside > div:nth-child(3) {
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+    box-shadow: 15px 15px 16px 10px #777477;
+}
+
+body > section > aside > div > p {
+    position: absolute;
+    display: inline-block;
+    color: #082fee;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: #ffffff;
+    height: 35px;
+    bottom: 15px;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+body > section > article > h1 {
+    font-size: 38px;
+    font-family: 'Poppins', sans-serif;
+    color: #b406f1;
+    margin: 0;
+    font-weight: bold;
+    padding-top: 28px;
+    padding-left: 35px;
+    padding-bottom: 27px;
+}
+
+body > section > article > div {
+    position: relative;
+    left: 60px;
+    top: 50px;
+    height: 1000px;
+    width: 1400px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+body > section > article > div > div {
+    position: relative;
+    border-radius: 50px;
+    border: 1px solid darkblue;
+    box-shadow: 4px 4px 5px 5px #6161c4;
+}
+
+body > section > article > div > div > a {
+    position: relative;
+    left: 56px;
+    top: 150px;
+    display: inline-block;
+    color: #03114f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+    border-radius: 20px;
+    height: 32px;
+    width: 210px;
+    bottom: 15px;
+    padding-top: 6px;
+    text-align: center;
+    text-decoration: none;
+}
+
+body > section > article > div > div:nth-child(1) {
+    background: url("img/Assignment1.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+body > section > article > div > div:nth-child(2) {
+    background: url("img/Assignment2.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+body > section > article > div > div:nth-child(3) {
+    background: url("img/Assignment3.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+body > section > article > div > div:nth-child(4) {
+    background: url("img/Assignment4.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+body > section > article > div > div:nth-child(5) {
+    background: url("img/Assignment5.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+body > section > article > div > div:nth-child(6) {
+    background: url("img/Assignment6.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+body > section > article > div > div:nth-child(7) {
+    background: url("img/Assignment7.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+body > section > article > div > div:nth-child(8) {
+    background: url("img/Assignment8.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+body > section > article > div > div:nth-child(9) {
+    background: url("img/Assignment9.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+body > section > article > div > div:nth-child(10) {
+    background: url("img/Assignment10.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+body > section > article > div > div:nth-child(11) {
+    background: url("img/Assignment11.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+body > section > article > div > div:nth-child(12) {
+    background: url("img/Assignment12.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+body > section > article > div > div:nth-child(13) {
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+body > section > article > div > div:nth-child(14) {
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+body > section > article > div > div:nth-child(15) {
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+body > section > article > div > div:nth-child(16) {
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+span{
+    color: #159f0b;
+}
