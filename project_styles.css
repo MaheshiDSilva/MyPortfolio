@@ -45,7 +45,7 @@ body > section > aside > div {
     transition: 1s;
 }
 
-body > section > aside>div:hover{
+body > section > aside > div:hover {
     transform: scale(1.1);
     z-index: 2;
 }
@@ -233,6 +233,509 @@ body > section > article > div > div:nth-child(16) {
     background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }
 
-span{
+span {
     color: #159f0b;
+}
+
+
+/*RESPONSIVE*/
+
+@media all and (min-width: 320px) and (max-width: 375px) {
+
+    body > section > h1 {
+        font-size: 15px;
+        padding-top: 13px;
+        padding-left: 16px;
+    }
+
+    body > section > aside {
+        position: relative;
+        left: -193px;
+        top: -12px;
+        height: 424px;
+        width: 708px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        grid-gap: 10px;
+    }
+
+    body > section > aside > div:nth-child(1) {
+        background: url("img/hostel1 m.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.7;
+        box-shadow: 0px 0px 0px 0px #777477;
+    }
+
+    body > section > aside > div:nth-child(2) {
+        box-shadow: 0px 0px 0px 0px #777477;
+    }
+
+    body > section > aside > div:nth-child(3) {
+        box-shadow: 0px 0px 0px 0px #777477;
+    }
+
+    body > section > aside > div > p {
+        position: absolute;
+        display: inline-block;
+        color: #082fee;
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        background-color: #ffffff;
+        height: 15px;
+        bottom: 15px;
+        text-align: center;
+        left: 0;
+        right: 0;
+    }
+
+    body > section > article > h1 {
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        color: #b406f1;
+        margin: 0;
+        font-weight: bold;
+        padding-top: 33px;
+        padding-left: 16px;
+        padding-bottom: 27px;
+    }
+
+    body > section > article > div {
+        position: relative;
+        left: 22px;
+        top: -2px;
+        height: 1283px;
+        width: 274px;
+        display: grid;
+        grid-template-rows: repeat(16, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+
+    body > section > article > div > div > a {
+        position: relative;
+        left: 89px;
+        top: 35px;
+        display: inline-block;
+        color: #03114f;
+        font-family: 'Poppins', sans-serif;
+        font-size: 9px;
+        font-weight: bold;
+        background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+        border-radius: 12px;
+        height: 19px;
+        width: 91px;
+        bottom: 15px;
+        padding-top: 7px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    body > section > article > div > div {
+        position: relative;
+        border-radius: 26px;
+        border: 1px solid darkblue;
+        box-shadow: 0px 0px 0px 1px #6161c4;
+    }
+}
+
+@media all and (min-width: 375px) and (max-width: 425px) {
+    body > section > h1 {
+        font-size: 15px;
+        padding-top: 13px;
+        padding-left: 16px;
+    }
+
+    body > section > aside {
+        position: relative;
+        left: 53px;
+        top: -12px;
+        height: 424px;
+        width: 265px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        grid-gap: 10px;
+    }
+
+    body > section > aside > div:nth-child(1) {
+        background: url("img/hostel1 m.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.7;
+        box-shadow: 0px 0px 0px 0px #777477;
+    }
+
+    body > section > aside > div:nth-child(2) {
+        box-shadow: 0px 0px 0px 0px #777477;
+    }
+
+    body > section > aside > div:nth-child(3) {
+        box-shadow: 0px 0px 0px 0px #777477;
+    }
+
+    body > section > aside > div > p {
+        position: absolute;
+        display: inline-block;
+        color: #082fee;
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        background-color: #ffffff;
+        height: 15px;
+        bottom: 15px;
+        text-align: center;
+        left: 0;
+        right: 0;
+    }
+
+    body > section > article > h1 {
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        color: #b406f1;
+        margin: 0;
+        font-weight: bold;
+        padding-top: 0px;
+        padding-left: 16px;
+        padding-bottom: 27px;
+    }
+
+    body > section > article > div {
+        position: relative;
+        left: 49px;
+        top: -2px;
+        height: 1283px;
+        width: 274px;
+        display: grid;
+        grid-template-rows: repeat(16, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+
+    body > section > article > div > div > a {
+        position: relative;
+        left: 89px;
+        top: 35px;
+        display: inline-block;
+        color: #03114f;
+        font-family: 'Poppins', sans-serif;
+        font-size: 9px;
+        font-weight: bold;
+        background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+        border-radius: 12px;
+        height: 19px;
+        width: 91px;
+        bottom: 15px;
+        padding-top: 7px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    body > section > article > div > div {
+        position: relative;
+        border-radius: 26px;
+        border: 1px solid darkblue;
+        box-shadow: 0px 0px 0px 1px #6161c4;
+    }
+}
+
+@media all and (min-width: 425px) and (max-width: 768px) {
+    body > section > h1 {
+        font-size: 17px;
+        padding-top: 26px;
+        padding-left: 26px;
+        font-weight: bold;
+    }
+
+    body > section > aside {
+        position: relative;
+        left: 75px;
+        top: -4px;
+        height: 487px;
+        width: 265px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        grid-gap: 10px;
+    }
+
+    body > section > aside > div:nth-child(1) {
+        background: url("img/hostel1 m.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.7;
+        box-shadow: 0px 0px 0px 0px #777477;
+    }
+
+    body > section > aside > div:nth-child(2) {
+        box-shadow: 0px 0px 0px 0px #777477;
+    }
+
+    body > section > aside > div:nth-child(3) {
+        box-shadow: 0px 0px 0px 0px #777477;
+    }
+
+    body > section > aside > div > p {
+        position: absolute;
+        display: inline-block;
+        color: #082fee;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        background-color: #ffffff;
+        height: 18px;
+        bottom: 15px;
+        text-align: center;
+        left: 0;
+        right: 0;
+    }
+
+    body > section > article > h1 {
+        font-size: 17px;
+        padding-top: 0px;
+        padding-left: 26px;
+        padding-bottom: 27px;
+    }
+
+    body > section > article > div {
+        position: relative;
+        left: 72px;
+        top: -2px;
+        height: 1421px;
+        width: 274px;
+        display: grid;
+        grid-template-rows: repeat(16, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+
+    body > section > article > div > div > a {
+        position: relative;
+        left: 89px;
+        top: 43px;
+        display: inline-block;
+        color: #03114f;
+        font-family: 'Poppins', sans-serif;
+        font-size: 11px;
+        font-weight: bold;
+        background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+        border-radius: 12px;
+        height: 19px;
+        width: 91px;
+        bottom: 15px;
+        padding-top: 7px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    body > section > article > div > div {
+        position: relative;
+        border-radius: 26px;
+        border: 1px solid darkblue;
+        box-shadow: 0px 0px 0px 1px #6161c4;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    body > section > h1 {
+        font-size: 28px;
+        padding-top: 28px;
+        padding-left: 23px;
+        padding-bottom: -1px;
+        font-weight: bold;
+    }
+
+    body > section > aside {
+        position: relative;
+        left: 0;
+        top: -4px;
+        height: 734px;
+        width: 765px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        grid-gap: 10px;
+    }
+
+    body > section > aside > div:nth-child(1) {
+        background: url("img/hostel1 m.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.7;
+        box-shadow: 0px 0px 0px 0px #777477;
+        width: 470px;
+    }
+
+    body > section > aside > div:nth-child(2) {
+        box-shadow: 0px 0px 0px 0px #777477;
+        width: 470px;
+    }
+
+    body > section > aside > div:nth-child(3) {
+        box-shadow: 0px 0px 0px 0px #777477;
+        width: 470px;
+    }
+
+    body > section > aside > div > p {
+        position: absolute;
+        display: inline-block;
+        color: #082fee;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #ffffff;
+        height: 43px;
+        bottom: 15px;
+        text-align: center;
+        left: 0;
+        right: 0;
+    }
+
+    body > section > article > h1 {
+        font-size: 28px;
+        padding-top: 10px;
+        padding-left: 26px;
+        padding-bottom: 27px;
+    }
+
+    body > section > article > div {
+        position: relative;
+        left: 175px;
+        top: 20px;
+        height: 2506px;
+        width: 410px;
+        display: grid;
+        grid-template-rows: repeat(16, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+
+    body > section > article > div > div > a {
+        position: relative;
+        left: 121px;
+        top: 89px;
+        display: inline-block;
+        color: #03114f;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+        border-radius: 30px;
+        height: 31px;
+        width: 168px;
+        bottom: 15px;
+        padding-top: 11px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    body > section > article > div > div {
+        position: relative;
+        border-radius: 26px;
+        border: 1px solid darkblue;
+        box-shadow: 0px 0px 0px 1px #6161c4;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+    body > section > h1 {
+        font-size: 37px;
+        padding-top: 34px;
+        padding-left: 40px;
+        padding-bottom: -1px;
+        font-weight: bold;
+    }
+
+    body > section > aside {
+        position: relative;
+        left: 302px;
+        top: 10px;
+        height: 964px;
+        width: 401px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        grid-gap: 10px;
+    }
+
+    body > section > aside > div:nth-child(1) {
+        background: url("img/hostel1 m.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.7;
+        box-shadow: 0px 0px 0px 0px #777477;
+        width: 454px;
+    }
+
+    body > section > aside > div:nth-child(2) {
+        box-shadow: 0px 0px 0px 0px #777477;
+        width: 454px;
+    }
+
+    body > section > aside > div:nth-child(3) {
+        box-shadow: 0px 0px 0px 0px #777477;
+        width: 454px;
+    }
+
+    body > section > aside > div > p {
+        position: absolute;
+        display: inline-block;
+        color: #082fee;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #ffffff;
+        height: 43px;
+        bottom: 15px;
+        text-align: center;
+        left: 0;
+        right: 0;
+    }
+
+    body > section > article > h1 {
+        font-size: 37px;
+        padding-top: 59px;
+        padding-left: 40px;
+        padding-bottom: 27px;
+    }
+
+    body > section > article > div {
+        position: relative;
+        left: 264px;
+        top: 34px;
+        height: 3054px;
+        width: 478px;
+        display: grid;
+        grid-template-rows: repeat(16, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+
+    body > section > article > div > div > a {
+        position: relative;
+        left: 148px;
+        top: 125px;
+        display: inline-block;
+        color: #03114f;
+        font-family: 'Poppins', sans-serif;
+        font-size: 19px;
+        font-weight: bold;
+        background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+        border-radius: 50px;
+        height: 31px;
+        width: 177px;
+        bottom: 15px;
+        padding-top: 11px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    body > section > article > div > div {
+        position: relative;
+        border-radius: 26px;
+        border: 1px solid darkblue;
+        box-shadow: 0px 0px 0px 1px #6161c4;
+    }
 }

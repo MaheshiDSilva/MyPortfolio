@@ -133,13 +133,13 @@ body > main > section:nth-child(1) > section > article > div > div {
     border-radius: 100%;
     border: 2px solid #00d0ff;
     background: #00d0ff;
-
 }
 
 body > main > section:nth-child(1) > section > article > div > div > a > i {
     font-size: 40px;
     padding-left: 7px;
     padding-top: 25px;
+    color: #000000;
 }
 
 /*1st section end*/
@@ -683,23 +683,47 @@ body > main > section:nth-child(5) > section > aside > div:hover {
 }
 
 body > main > section:nth-child(5) > section > aside > div:nth-child(1) {
+    background: url("img/java certificate.png");
+    background-size: cover;
+    background-position: center;
     top: 151px;
     left: 200px;
+    width: 460px;
+    height: 310px;
+    border: 3px solid #06f5ed;
 }
 
 body > main > section:nth-child(5) > section > aside > div:nth-child(2) {
+    background: url("img/HTML certificate.png");
+    background-size: cover;
+    background-position: center;
     right: 200px;
     top: 151px;
+    width: 460px;
+    height: 310px;
+    border: 3px solid #06f5ed;
 }
 
 body > main > section:nth-child(5) > section > aside > div:nth-child(3) {
+    background: url("img/sql certificate.png");
+    background-size: cover;
+    background-position: center;
     bottom: 85px;
     left: 283px;
+    width: 460px;
+    height: 310px;
+    border: 3px solid #06f5ed;
 }
 
 body > main > section:nth-child(5) > section > aside > div:nth-child(4) {
+    background: url("img/CSS certificate.jpg");
+    background-size: cover;
+    background-position: center;
     bottom: 85px;
     right: 283px;
+    width: 460px;
+    height: 310px;
+    border: 3px solid #06f5ed;
 }
 
 /*5th section end*/
@@ -944,8 +968,6 @@ footer > section > aside > p {
     /*border: 2px solid white;*/
     border-radius: 100%;
     background: black;
-
-
 }
 
 #links > div > a > i {
@@ -1000,4 +1022,2013 @@ footer > section > aside > p {
 
 span {
     color: #ff0087;
+}
+
+/*RESPONSIVE*/
+
+
+@media all and (min-width: 320px) and (max-width: 375px) {
+
+    /*header*/
+    header {
+        height: 79px;
+    }
+
+    header > nav > menu {
+        bottom: 0;
+        font-size: 7px;
+        padding-left: 3px;
+    }
+
+    header > nav > menu > li {
+        padding-left: 8px;
+        padding-right: 0px;
+    }
+
+    header > aside > img {
+        width: 40px;
+        padding-left: 140px;
+    }
+
+    header > nav > menu {
+        padding-bottom: 17px;
+        font-size: 10px;
+        padding-left: 3px;
+    }
+
+    /*section 1*/
+    body > main > section:nth-child(1) > section > aside {
+        display: none;
+    }
+
+    body > main > section:nth-child(1) > section > article > p {
+        font-size: 17px;
+        padding-top: 122px;
+        padding-left: 33px;
+    }
+
+    body > main > section:nth-child(1) > section > article > h1 {
+        font-size: 49px;
+        padding-left: 32px;
+        margin-top: 26px;
+        margin-bottom: 19px;
+    }
+
+    body > main > section:nth-child(1) > section > article > h2 {
+        font-size: 23px;
+        padding-left: 33px;
+    }
+
+    body > main > section:nth-child(1) > section > article > div {
+        height: 27px;
+        width: 56px;
+        left: 96px;
+        top: 13px;
+        gap: 10px;
+    }
+
+    body > main > section:nth-child(1) > section > article > div > div > a > i {
+        font-size: 23px;
+        padding-left: 9px;
+        padding-top: 31px;
+        color: #00e7ff;
+    }
+
+    body > main > section:nth-child(1) > section > article > div > div {
+        height: 100%;
+        flex-grow: 1;
+        border-radius: 100%;
+        border: 2px solid #0A2640;
+        background: #0A2640;
+    }
+
+    @keyframes animate {
+        0%, 10%, 100% {
+            width: 0;
+        }
+        70%, 90% {
+            width: 76%;
+        }
+    }
+
+    /*section 2*/
+    body > main > section:nth-child(2) > section > h1 {
+        font-size: 15px;
+        padding-top: 13px;
+        padding-left: 16px;
+    }
+
+    body > main > section:nth-child(2) > section > article > p:nth-child(1) {
+        font-size: 8px;
+    }
+
+    body > main > section:nth-child(2) > section > article {
+        width: 192px;
+        height: 27px;
+        top: 192px;
+        right: 26px;
+        padding-left: 15px;
+        padding-top: 20px;
+        padding-top: 21px;
+        padding-right: 27px;
+        padding-bottom: 97px;
+        padding-left: 36px;
+        border-radius: 38px;
+    }
+
+    body > main > section:nth-child(2) > section > aside {
+        top: 22px;
+        left: 65px;
+        width: 185px;
+        height: 214px;
+        clip-path: circle(46.1% at 50% 46%);
+
+
+    }
+
+    body > main > section:nth-child(2) > section > div {
+        height: 87px;
+        width: 12px;
+        padding-bottom: 10px;
+        padding-left: 285px;
+        padding-top: 88px;
+        flex-direction: column;
+    }
+
+    body > main > section:nth-child(2) > section > div > div > a > i {
+        font-size: 20px;
+    }
+
+    body > main > section:nth-child(2) > section > article > p:nth-child(2) {
+        font-size: 8px;
+        bottom: 33px;
+        right: -57px;
+        width: 60px;
+        height: 18px;
+        padding-left: 9px;
+        padding-top: 6px;
+        border-radius: 20px;
+        margin-top: 58px;
+    }
+
+    body > main > section:nth-child(3) > section > h1 {
+        font-size: 15px;
+        padding-top: 13px;
+        padding-left: 16px;
+    }
+
+    body > main > section:nth-child(3) > section > aside {
+        width: 309px;
+        height: 238px;
+        /*border: 2px solid white;*/
+        left: 4px;
+        background: url("img/edu.png");
+        background-position: center;
+        background-size: cover;
+        top: 14px;
+    }
+
+    body > main > section:nth-child(3) > section > article {
+        display: none;
+    }
+
+    #circle1 {
+        display: none;
+    }
+
+    #circle2 {
+        display: none;
+    }
+
+    #aside1 {
+        display: none;
+    }
+
+    #aside2 {
+        display: none;
+    }
+
+    #aside3 {
+        display: none;
+    }
+
+    #aside4 {
+        display: none;
+    }
+
+    #aside5 {
+        display: none;
+    }
+
+    #aside6 {
+        display: none;
+    }
+
+    /*section 4*/
+    body > main > section:nth-child(4) > section > h1 {
+        font-size: 15px;
+        padding-top: 13px;
+        padding-left: 16px;
+    }
+
+    body > main > section:nth-child(4) > section > article {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(1) {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(2) {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(3) {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(4) {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(5) {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(6) {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > div {
+        position: absolute;
+        bottom: 74px;
+        left: -246px;
+        padding-top: 80px;
+        padding-left: 370px;
+        padding-bottom: 0px;
+        bottom: 18px;
+    }
+
+    body > main > section:nth-child(4) > section > div > button {
+        font-size: 10px;
+        border-radius: 12px;
+        width: 69px;
+        height: 21px;
+    }
+
+    #sec4 {
+        width: 213px;
+        height: 284px;
+        left: 50px;
+        top: -16px;
+        background: url(img/skill.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    /*section 5*/
+    body > main > section:nth-child(5) > section > h1 {
+        font-size: 15px;
+        padding-top: 13px;
+        padding-left: 16px;
+    }
+
+    body > main > section:nth-child(5) > section > aside > div:nth-child(1) {
+        width: 150px;
+        height: 100px;
+        top: 54px;
+        left: 143px;
+        border: 2px solid #06f5ed;
+    }
+
+    body > main > section:nth-child(5) > section > aside > div:nth-child(2) {
+        width: 150px;
+        height: 100px;
+        border: 2px solid #06f5ed;
+        right: 145px;
+        top: 86px;
+    }
+
+    body > main > section:nth-child(5) > section > aside > div:nth-child(3) {
+        bottom: 72px;
+        left: 143px;
+        width: 150px;
+        height: 100px;
+        border: 2px solid #06f5ed;
+    }
+
+    body > main > section:nth-child(5) > section > aside > div:nth-child(4) {
+        bottom: 42px;
+        right: 148px;
+        width: 150px;
+        height: 100px;
+        border: 2px solid #06f5ed;
+    }
+
+    /*section 6*/
+    body > main > section:nth-child(6) > section > h1 {
+        font-size: 15px;
+        padding-top: 13px;
+        padding-left: 16px;
+    }
+
+    body > main > section:nth-child(6) > section > article {
+        left: 0;
+        height: 253px;
+        width: 300px;
+        flex-direction: column;
+        grid-gap: 10px;
+    }
+
+    body > main > section:nth-child(6) > section > aside {
+        bottom: 15px;
+        left: 71px;
+    }
+
+    body > main > section:nth-child(6) > section > aside > div > button {
+        font-size: 9px;
+        height: 26px;
+        width: 164px;
+        bottom: 5px;
+    }
+
+    body > main > section:nth-child(6) > section > article > div > p {
+        font-size: 10px;
+        height: 14px;
+        bottom: 3px;
+    }
+
+    body > main > section:nth-child(6) > section > article > div:nth-child(1) {
+        box-shadow: 0px 0px 0px 0px #777477;
+    }
+
+    body > main > section:nth-child(6) > section > article > div:nth-child(2) {
+        box-shadow: 0px 0px 0px 0px #777477;
+    }
+
+    body > main > section:nth-child(6) > section > article > div:nth-child(3) {
+        box-shadow: 0px 0px 0px 0px #777477;
+    }
+
+    /*footer*/
+    footer > section > section > h1 {
+        font-size: 15px;
+        padding-top: 10px;
+        padding-left: 16px;
+        padding-bottom: 9px;
+    }
+
+    footer > section > section > p {
+        font-size: 8px;
+        padding-left: 15px;
+        padding-top: 0px;
+    }
+
+    #links {
+        height: 20px;
+        width: 97px;
+        padding-top: 0;
+        padding-left: 114px;
+        gap: 0px;
+        bottom: 51px;
+    }
+
+    #links > div {
+        background: #0A2640;
+    }
+
+    footer > section > address > ul {
+        padding-bottom: 35px;
+        padding-left: 21px;
+        padding-top: 84px;
+    }
+
+    footer > section > address > ul > li {
+        font-size: 10px;
+    }
+
+    footer > section > address > ul > li > i {
+        padding-right: 15px;
+        font-size: 10px;
+    }
+
+    footer > section > article {
+        top: 65px;
+        right: 99px;
+        font-size: 9px;
+    }
+
+    footer > section > address > ul > li:nth-child(1) {
+        padding-top: 92px;
+        padding-bottom: 10px;
+    }
+
+    footer > section > address > ul > li:nth-child(2) {
+        padding-bottom: 10px;
+    }
+
+    .submit {
+        height: 16px;
+        width: 38px;
+        margin-top: 14px;
+        padding-left: 7px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    #name {
+        height: 20px;
+        width: 200px;
+        border-radius: 5px;
+        margin-bottom: 9px;
+    }
+
+    #email {
+        height: 20px;
+        width: 200px;
+        border-radius: 5px;
+        margin-bottom: 9px;
+    }
+
+    #txtIntro {
+        height: 20px;
+        width: 200px;
+        border-radius: 5px;
+        margin-bottom: 9px;
+    }
+
+    footer > section > aside {
+        height: 27px;
+        font-size: 8px;
+    }
+
+    footer > section > aside > p {
+        padding-top: 9px;
+    }
+
+    #links > div > a > i {
+        font-size: 13px;
+        padding-left: 11px;
+        padding-top: 29px;
+    }
+
+}
+
+
+@media all and (min-width: 375px) and (max-width: 425px) {
+
+    /*header*/
+    header > nav > menu {
+        padding-bottom: 17px;
+        font-size: 10px;
+        padding-left: 0px;
+    }
+
+    header > aside > img {
+        width: 44px;
+        padding-left: 163px;
+        padding-top: 14px;
+    }
+
+    header > nav > menu > li {
+        display: inline-block;
+        padding: 0 7px 0 10px;
+    }
+
+    /*section 1*/
+    body > main > section:nth-child(1) > section > aside {
+        display: none;
+    }
+
+    body > main > section:nth-child(1) > section > article > p {
+        font-size: 18px;
+        padding-top: 122px;
+        padding-left: 42px;
+    }
+
+    body > main > section:nth-child(1) > section > article > h1 {
+        font-size: 52px;
+        padding-left: 41px;
+        margin-top: 26px;
+        margin-bottom: 19px;
+    }
+
+    body > main > section:nth-child(1) > section > article > h2 {
+        font-size: 25px;
+        padding-left: 42px;
+    }
+
+    body > main > section:nth-child(1) > section > article > div {
+        height: 27px;
+        width: 56px;
+        left: 124px;
+        top: 28px;
+        gap: 10px;
+    }
+
+    body > main > section:nth-child(1) > section > article > div > div > a > i {
+        font-size: 23px;
+        padding-left: 9px;
+        padding-top: 31px;
+        color: #00e7ff;
+    }
+
+    body > main > section:nth-child(1) > section > article > div > div {
+        height: 100%;
+        flex-grow: 1;
+        border-radius: 100%;
+        border: 2px solid #0A2640;
+        background: #0A2640;
+    }
+
+    @keyframes animate {
+        0%, 10%, 100% {
+            width: 0;
+        }
+        70%, 90% {
+            width: 70%;
+        }
+    }
+
+    /*section 2*/
+    body > main > section:nth-child(2) > section > h1 {
+        font-size: 15px;
+        padding-top: 13px;
+        padding-left: 16px;
+    }
+
+    body > main > section:nth-child(2) > section > article > p:nth-child(1) {
+        font-size: 10px;
+    }
+
+    body > main > section:nth-child(2) > section > article {
+        width: 258px;
+        height: 62px;
+        top: 205px;
+        right: 28px;
+        padding-left: 15px;
+        padding-top: 20px;
+        padding-top: 21px;
+        padding-right: 27px;
+        padding-bottom: 97px;
+        padding-left: 36px;
+        border-radius: 38px;
+    }
+
+    body > main > section:nth-child(2) > section > aside {
+        top: 33px;
+        left: 93px;
+        width: 185px;
+        height: 214px;
+        clip-path: circle(46.1% at 50% 46%);
+    }
+
+    body > main > section:nth-child(2) > section > div {
+        height: 111px;
+        width: 12px;
+        padding-bottom: 10px;
+        padding-left: 330px;
+        padding-top: 75px;
+        flex-direction: column;
+    }
+
+    body > main > section:nth-child(2) > section > div > div > a > i {
+        font-size: 22px;
+    }
+
+    body > main > section:nth-child(2) > section > article > p:nth-child(2) {
+        font-size: 9px;
+        bottom: 21px;
+        right: -87px;
+        width: 69px;
+        height: 18px;
+        padding-left: 9px;
+        padding-top: 6px;
+        border-radius: 20px;
+        margin-top: 58px;
+    }
+
+    body > main > section:nth-child(3) > section > h1 {
+        font-size: 15px;
+        padding-top: 13px;
+        padding-left: 16px;
+    }
+
+    body > main > section:nth-child(3) > section > aside {
+        width: 335px;
+        height: 253px;
+        left: 19px;
+        background: url(img/edu.png);
+        background-position: center;
+        background-size: cover;
+        top: 22px;
+    }
+
+    body > main > section:nth-child(3) > section > article {
+        display: none;
+    }
+
+    #circle1 {
+        display: none;
+    }
+
+    #circle2 {
+        display: none;
+    }
+
+    #aside1 {
+        display: none;
+    }
+
+    #aside2 {
+        display: none;
+    }
+
+    #aside3 {
+        display: none;
+    }
+
+    #aside4 {
+        display: none;
+    }
+
+    #aside5 {
+        display: none;
+    }
+
+    #aside6 {
+        display: none;
+    }
+
+    /*section 4*/
+    body > main > section:nth-child(4) > section > h1 {
+        font-size: 15px;
+        padding-top: 13px;
+        padding-left: 16px;
+    }
+
+    body > main > section:nth-child(4) > section > article {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(1) {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(2) {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(3) {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(4) {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(5) {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(6) {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > div {
+        position: absolute;
+        bottom: 74px;
+        left: -216px;
+        padding-top: 80px;
+        padding-left: 370px;
+        padding-bottom: 0px;
+        bottom: 18px;
+    }
+
+    body > main > section:nth-child(4) > section > div > button {
+        font-size: 10px;
+        border-radius: 12px;
+        width: 69px;
+        height: 21px;
+    }
+
+    #sec4 {
+        width: 240px;
+        height: 335px;
+        left: 68px;
+        top: -16px;
+        background: url(img/skill.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    /*section 5*/
+    body > main > section:nth-child(5) > section > h1 {
+        font-size: 15px;
+        padding-top: 13px;
+        padding-left: 16px;
+    }
+
+    body > main > section:nth-child(5) > section > aside > div:nth-child(1) {
+        width: 170px;
+        height: 120px;
+        top: 66px;
+        left: 148px;
+        border: 2px solid #06f5ed;
+    }
+
+    body > main > section:nth-child(5) > section > aside > div:nth-child(2) {
+        width: 170px;
+        height: 120px;
+        border: 2px solid #06f5ed;
+        right: 148px;
+        top: 109px;
+    }
+
+    body > main > section:nth-child(5) > section > aside > div:nth-child(3) {
+        bottom: 48px;
+        left: 148px;
+        width: 170px;
+        height: 120px;
+        border: 2px solid #06f5ed;
+    }
+
+    body > main > section:nth-child(5) > section > aside > div:nth-child(4) {
+        bottom: 12px;
+        right: 148px;
+        width: 170px;
+        height: 120px;
+        border: 2px solid #06f5ed;
+    }
+
+    /*section 6*/
+    body > main > section:nth-child(6) > section > h1 {
+        font-size: 15px;
+        padding-top: 13px;
+        padding-left: 16px;
+    }
+
+    body > main > section:nth-child(6) > section > article {
+        left: 35px;
+        height: 308px;
+        width: 300px;
+        flex-direction: column;
+        grid-gap: 10px;
+    }
+
+    body > main > section:nth-child(6) > section > aside {
+        bottom: 15px;
+        left: 106px;
+    }
+
+    body > main > section:nth-child(6) > section > aside > div > button {
+        font-size: 9px;
+        height: 26px;
+        width: 164px;
+        bottom: 5px;
+    }
+
+    body > main > section:nth-child(6) > section > article > div > p {
+        font-size: 10px;
+        height: 14px;
+        bottom: 3px;
+    }
+
+    body > main > section:nth-child(6) > section > article > div:nth-child(1) {
+        box-shadow: 0px 0px 0px 0px #777477;
+    }
+
+    body > main > section:nth-child(6) > section > article > div:nth-child(2) {
+        box-shadow: 0px 0px 0px 0px #777477;
+    }
+
+    body > main > section:nth-child(6) > section > article > div:nth-child(3) {
+        box-shadow: 0px 0px 0px 0px #777477;
+    }
+
+    /*footer*/
+    footer > section > section > h1 {
+        font-size: 15px;
+        padding-top: 10px;
+        padding-left: 16px;
+        padding-bottom: 9px;
+    }
+
+    footer > section > section > p {
+        font-size: 10px;
+        padding-left: 15px;
+        padding-top: 2px;
+        padding-right: 10px;
+        padding-left: 20px;
+    }
+
+    #links {
+        height: 20px;
+        width: 97px;
+        padding-top: 0;
+        padding-left: 141px;
+        gap: 0px;
+        bottom: 36px;
+    }
+
+    #links > div {
+        background: #0A2640;
+    }
+
+    footer > section > address > ul {
+        padding-bottom: 35px;
+        padding-left: 42px;
+        padding-top: 94px;
+    }
+
+    footer > section > address > ul > li {
+        font-size: 10px;
+    }
+
+    footer > section > address > ul > li > i {
+        padding-right: 15px;
+        font-size: 13px;
+    }
+
+    footer > section > article {
+        top: 75px;
+        right: 85px;
+        font-size: 9px;
+    }
+
+    footer > section > address > ul > li:nth-child(1) {
+        padding-top: 92px;
+        padding-bottom: 10px;
+    }
+
+    footer > section > address > ul > li:nth-child(2) {
+        padding-bottom: 10px;
+    }
+
+    .submit {
+        height: 16px;
+        width: 38px;
+        margin-top: 14px;
+        padding-left: 7px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    #name {
+        height: 20px;
+        width: 200px;
+        border-radius: 5px;
+        margin-bottom: 9px;
+    }
+
+    #email {
+        height: 20px;
+        width: 200px;
+        border-radius: 5px;
+        margin-bottom: 9px;
+    }
+
+    #txtIntro {
+        height: 20px;
+        width: 200px;
+        border-radius: 5px;
+        margin-bottom: 9px;
+    }
+
+    footer > section > aside {
+        height: 33px;
+        font-size: 8px;
+    }
+
+    footer > section > aside > p {
+        padding-top: 9px;
+    }
+
+    #links > div > a > i {
+        font-size: 14px;
+        padding-left: 11px;
+        padding-top: 29px;
+    }
+
+}
+
+
+@media all and (min-width: 425px) and (max-width: 768px) {
+    /*header*/
+    header {
+        position: fixed;
+        height: 106px;
+        background-color: #0A2640;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    header > nav > menu {
+        padding-bottom: 17px;
+        font-size: 13px;
+        padding-left: 1px;
+
+    }
+
+    header > aside > img {
+        width: 62px;
+        padding-left: 184px;
+        padding-top: 17px;
+    }
+
+    header > nav > menu > li {
+        display: inline-block;
+        padding: 0 4px 0 11px;
+    }
+
+    /*section 1*/
+    body > main > section:nth-child(1) > section > aside {
+        clip-path: inset(1% 4% 0 1%);
+        height: 370px;
+        width: 437px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        background-position: center;
+        background-size: cover;
+    }
+
+    body > main > section:nth-child(1) > section > article > p {
+        font-size: 20px;
+        padding-top: 141px;
+        padding-left: 46px;
+    }
+
+    body > main > section:nth-child(1) > section > article > h1 {
+        font-size: 55px;
+        padding-left: 44px;
+        margin-top: 30px;
+        margin-bottom: 23px;
+    }
+
+    body > main > section:nth-child(1) > section > article > h2 {
+        font-size: 28px;
+        padding-left: 47px;
+    }
+
+    body > main > section:nth-child(1) > section > article > div {
+        height: 27px;
+        width: 56px;
+        left: 257px;
+        top: 3px;
+        gap: 10px;
+    }
+
+    body > main > section:nth-child(1) > section > article > div > div > a > i {
+        font-size: 23px;
+        padding-left: 9px;
+        padding-top: 31px;
+        color: #00e7ff;
+    }
+
+    body > main > section:nth-child(1) > section > article > div > div {
+        height: 100%;
+        flex-grow: 1;
+        border-radius: 100%;
+        border: 2px solid #0A2640;
+        background: #0A2640;
+    }
+
+    @keyframes animate {
+        0%, 10%, 100% {
+            width: 0;
+        }
+        70%, 90% {
+            width: 65%;
+        }
+    }
+
+    /*section 2*/
+    body > main > section:nth-child(2) > section > h1 {
+        font-size: 17px;
+        padding-top: 26px;
+        padding-left: 26px;
+    }
+
+    body > main > section:nth-child(2) > section > article > p:nth-child(1) {
+        font-size: 14px;
+    }
+
+    body > main > section:nth-child(2) > section > article {
+        width: 306px;
+        height: 178px;
+        top: 311px;
+        right: 28px;
+        padding-left: 15px;
+        padding-top: 20px;
+        padding-top: 58px;
+        padding-right: 24px;
+        padding-bottom: 97px;
+        padding-left: 36px;
+        border-radius: 38px;
+    }
+
+    body > main > section:nth-child(2) > section > aside {
+        top: -18px;
+        left: 49px;
+        width: 365px;
+        height: 463px;
+        clip-path: circle(40.1% at 46% 48%);
+    }
+
+    body > main > section:nth-child(2) > section > div {
+        height: 37px;
+        width: 119px;
+        bottom: -591px;
+        left: -138px;
+        padding-top: 75px;
+        flex-direction: row;
+    }
+
+    body > main > section:nth-child(2) > section > div > div > a > i {
+        font-size: 22px;
+    }
+
+    body > main > section:nth-child(2) > section > article > p:nth-child(2) {
+        font-size: 12px;
+        bottom: -12px;
+        right: -84px;
+        width: 100px;
+        height: 31px;
+        padding-left: 19px;
+        padding-top: 13px;
+        border-radius: 20px;
+        margin-top: 58px;
+    }
+
+    body > main > section:nth-child(3) > section > h1 {
+        font-size: 17px;
+        padding-top: 26px;
+        padding-left: 26px;
+    }
+
+    body > main > section:nth-child(3) > section > aside {
+        width: 425px;
+        height: 344px;
+        left: 1px;
+        background: url(img/edu.png);
+        background-position: center;
+        background-size: cover;
+        top: 113px;
+    }
+
+    body > main > section:nth-child(3) > section > article {
+        display: none;
+    }
+
+    #circle1 {
+        display: none;
+    }
+
+    #circle2 {
+        display: none;
+    }
+
+    #aside1 {
+        display: none;
+    }
+
+    #aside2 {
+        display: none;
+    }
+
+    #aside3 {
+        display: none;
+    }
+
+    #aside4 {
+        display: none;
+    }
+
+    #aside5 {
+        display: none;
+    }
+
+    #aside6 {
+        display: none;
+    }
+
+    /*section 4*/
+    body > main > section:nth-child(4) > section > h1 {
+        font-size: 17px;
+        padding-top: 26px;
+        padding-left: 26px;
+    }
+
+    body > main > section:nth-child(4) > section > article {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(1) {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(2) {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(3) {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(4) {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(5) {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(6) {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > div {
+        position: absolute;
+        left: -214px;
+        padding-top: 80px;
+        padding-left: 370px;
+        padding-bottom: 0px;
+        bottom: 92px;
+    }
+
+    body > main > section:nth-child(4) > section > div > button {
+        font-size: 15px;
+        border-radius: 15px;
+        width: 110px;
+        height: 35px;
+    }
+
+    #sec4 {
+        width: 370px;
+        height: 522px;
+        left: 24px;
+        top: 21px;
+        background: url(img/skill.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    /*section 5*/
+    body > main > section:nth-child(5) > section > h1 {
+        font-size: 17px;
+        padding-top: 26px;
+        padding-left: 26px;
+
+    }
+
+    body > main > section:nth-child(5) > section > aside > div:nth-child(1) {
+        width: 244px;
+        height: 160px;
+        top: 69px;
+        left: 89px;
+        border: 3px solid #06f5ed;
+    }
+
+    body > main > section:nth-child(5) > section > aside > div:nth-child(2) {
+        width: 244px;
+        height: 160px;
+        border: 3px solid #06f5ed;
+        right: 89px;
+        top: 244px;
+    }
+
+    body > main > section:nth-child(5) > section > aside > div:nth-child(3) {
+        bottom: 185px;
+        left: 89px;
+        width: 244px;
+        height: 160px;
+        border: 3px solid #06f5ed;
+    }
+
+    body > main > section:nth-child(5) > section > aside > div:nth-child(4) {
+        bottom: 12px;
+        right: 90px;
+        width: 244px;
+        height: 160px;
+        border: 3px solid #06f5ed;
+    }
+
+    /*section 6*/
+    body > main > section:nth-child(6) > section > h1 {
+        font-size: 17px;
+        padding-top: 26px;
+        padding-left: 26px;
+    }
+
+    body > main > section:nth-child(6) > section > article {
+        left: 60px;
+        height: 631px;
+        width: 300px;
+        flex-direction: column;
+        grid-gap: 10px;
+    }
+
+    body > main > section:nth-child(6) > section > aside {
+        bottom: 11px;
+        left: 147px;
+    }
+
+    body > main > section:nth-child(6) > section > aside > div > button {
+        font-size: 11px;
+        height: 40px;
+        width: 130px;
+        bottom: 5px;
+    }
+
+    body > main > section:nth-child(6) > section > article > div > p {
+        font-size: 10px;
+        height: 14px;
+        bottom: 3px;
+    }
+
+    body > main > section:nth-child(6) > section > article > div:nth-child(1) {
+        box-shadow: 0px 0px 0px 0px #777477;
+    }
+
+    body > main > section:nth-child(6) > section > article > div:nth-child(2) {
+        box-shadow: 0px 0px 0px 0px #777477;
+    }
+
+    body > main > section:nth-child(6) > section > article > div:nth-child(3) {
+        box-shadow: 0px 0px 0px 0px #777477;
+    }
+
+    /*footer*/
+    footer > section > section > h1 {
+        font-size: 17px;
+        padding-top: 26px;
+        padding-left: 26px;
+        padding-bottom: 9px;
+    }
+
+    footer > section > section > p {
+        font-size: 13px;
+        padding-left: 15px;
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-left: 25px;
+    }
+
+    #links {
+        height: 50px;
+        width: 149px;
+        padding-top: 0;
+        padding-left: 141px;
+        gap: 0px;
+        bottom: 36px;
+    }
+
+    #links > div {
+        background: #0A2640;
+    }
+
+    footer > section > address > ul {
+        padding-bottom: 70px;
+        padding-left: 45px;
+        padding-top: 262px;
+    }
+
+    footer > section > address > ul > li {
+        font-size: 15px;
+    }
+
+    footer > section > address > ul > li > i {
+        padding-right: 20px;
+        font-size: 20px;
+    }
+
+    footer > section > article {
+        top: 150px;
+        right: 104px;
+        font-size: 11px;
+    }
+
+    footer > section > address > ul > li:nth-child(1) {
+        padding-top: 92px;
+        padding-bottom: 26px;
+    }
+
+    footer > section > address > ul > li:nth-child(2) {
+        padding-bottom: 26px;
+    }
+
+    .submit {
+        height: 19px;
+        width: 48px;
+        margin-top: 14px;
+        padding-left: 12px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    #name {
+        height: 28px;
+        width: 226px;
+        border-radius: 8px;
+        margin-bottom: 21px;
+    }
+
+    #email {
+        height: 28px;
+        width: 226px;
+        border-radius: 8px;
+        margin-bottom: 21px;
+    }
+
+    #txtIntro {
+        height: 28px;
+        width: 226px;
+        border-radius: 8px;
+        margin-bottom: 13px;
+    }
+
+    footer > section > aside {
+        height: 59px;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    footer > section > aside > p {
+        padding-top: 9px;
+    }
+
+    #links > div > a > i {
+        font-size: 20px;
+        padding-left: 11px;
+        padding-top: 29px;
+    }
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+    /*header*/
+    header {
+        height: 160px;
+    }
+
+    header > aside > img {
+        width: 85px;
+        padding-left: 334px;
+        padding-top: 19px;
+    }
+
+    header > nav > menu {
+        font-size: 23px;
+    }
+
+    /*section 1*/
+    body > main > section:nth-child(1) > section > article > p {
+        display: inline-block;
+        font-size: 29px;
+        padding-top: 211px;
+        padding-left: 94px;
+    }
+
+    body > main > section:nth-child(1) > section > article > h1 {
+        font-size: 75px;
+        padding-left: 91px;
+        margin-bottom: 22px;
+    }
+
+    body > main > section:nth-child(1) > section > article > h2 {
+        display: inline-block;
+        font-size: 36px;
+        padding-left: 94px;
+    }
+
+    body > main > section:nth-child(1) > section > article > div {
+        height: 58px;
+        width: 52px;
+        left: 662px;
+        top: -215px;
+        flex-direction: column;
+    }
+
+    body > main > section:nth-child(1) > section > article > div > div > a > i {
+        font-size: 28px;
+        padding-left: 9px;
+        padding-top: 14px;
+        color: #00e7ff;
+    }
+
+    body > main > section:nth-child(1) > section > aside {
+        clip-path: ellipse(44% 54% at 55% 61%);
+        height: 581px;
+        /*width: 806px;*/
+    }
+
+    body > main > section:nth-child(1) > section > article > div > div {
+        height: 100%;
+        flex-grow: 1;
+        border-radius: 100%;
+        border: 2px solid #0A2640;
+        background: #0A2640;
+    }
+
+    @keyframes animate {
+        0%, 10%, 100% {
+            width: 0;
+        }
+        70%, 90% {
+            width: 49%;
+        }
+    }
+
+    /*section 2*/
+    body > main > section:nth-child(2) > section > h1 {
+        font-size: 28px;
+        padding-top: 28px;
+        padding-left: 23px;
+        padding-bottom: -1px;
+    }
+
+    body > main > section:nth-child(2) > section > article > p:nth-child(1) {
+        font-size: 18px;
+    }
+
+    body > main > section:nth-child(2) > section > article {
+        width: 452px;
+        height: 252px;
+        top: 389px;
+        right: 106px;
+        padding-left: 15px;
+        padding-top: 20px;
+        padding-top: 70px;
+        padding-right: 49px;
+        padding-bottom: 40px;
+        padding-left: 58px;
+    }
+
+    body > main > section:nth-child(2) > section > div {
+        height: 56px;
+        width: 167px;
+        padding-bottom: 10px;
+        padding-top: 901px;
+        padding-left: 296px;
+        bottom: 73px;
+    }
+
+    body > main > section:nth-child(2) > section > aside {
+        top: 55px;
+        left: 212px;
+        width: 323px;
+        height: 348px;
+        clip-path: ellipse(53% 49% at 53% 62%);
+    }
+
+    body > main > section:nth-child(2) > section > div {
+        height: 56px;
+        width: 167px;
+        padding-bottom: 10px;
+        padding-top: 675px;
+        padding-left: 305px;
+        bottom: -134px;
+    }
+
+    body > main > section:nth-child(2) > section > article > p:nth-child(2) {
+        font-size: 18px;
+        bottom: -18px;
+        right: -133px;
+        width: 144px;
+        height: 41px;
+        padding-left: 21px;
+        padding-top: 10px;
+        margin-top: 85px;
+    }
+
+    body > main > section:nth-child(2) > section > div > div > a > i {
+        font-size: 33px;
+    }
+
+    /*section3*/
+    body > main > section:nth-child(3) > section > h1 {
+        font-size: 28px;
+        padding-top: 28px;
+        padding-left: 23px;
+        padding-bottom: -1px;
+    }
+
+    body > main > section:nth-child(3) > section > aside {
+        position: relative;
+        top: 110px;
+        left: 22px;
+        width: 646px;
+        height: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    body > main > section:nth-child(3) > section > aside > aside > div {
+        width: 109px;
+        height: 300px;
+        flex-grow: 3;
+        margin-bottom: 61px;
+        margin-bottom: 61px;
+        left: 0;
+    }
+
+    body > main > section:nth-child(3) > section > article {
+        display: none;
+    }
+
+    #circle1 {
+        display: none;
+    }
+
+    #circle2 {
+        display: none;
+    }
+
+    #aside1 {
+        margin-bottom: 144px;
+    }
+
+    #aside2 {
+        margin-top: 243px;
+    }
+
+    #aside4 {
+        margin-top: 242px;
+    }
+
+    #aside5 {
+        margin-bottom: 102px;
+    }
+
+    #aside6 {
+        margin-top: 245px;
+    }
+
+    /*section 4*/
+    body > main > section:nth-child(4) > section > h1 {
+        font-size: 28px;
+        padding-top: 28px;
+        padding-left: 23px;
+        padding-bottom: -1px;
+    }
+
+    body > main > section:nth-child(4) > section > aside {
+        position: relative;
+        width: 470px;
+        height: 700px;
+        top: 50px;
+        left: 146px;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 22px;
+        margin-right: 0;
+    }
+
+    body > main > section:nth-child(4) > section > article {
+        display: none;
+    }
+
+    body > main > section:nth-child(4) > section > div {
+        left: -92px;
+    }
+
+    /*section 5*/
+    body > main > section:nth-child(5) > section > h1 {
+        font-size: 28px;
+        padding-top: 28px;
+        padding-left: 23px;
+        padding-bottom: -1px;
+    }
+
+    body > main > section:nth-child(5) > section > aside > div:nth-child(1) {
+        top: 180px;
+        left: 250px;
+    }
+
+    body > main > section:nth-child(5) > section > aside > div:nth-child(2) {
+        right: 250px;
+        top: 129px;
+    }
+
+    body > main > section:nth-child(5) > section > aside > div:nth-child(3) {
+        bottom: 94px;
+        left: 250px;
+    }
+
+    body > main > section:nth-child(5) > section > aside > div:nth-child(4) {
+        bottom: 146px;
+        right: 250px;
+    }
+
+    /*section 6*/
+    body > main > section:nth-child(6) > section > h1 {
+        font-size: 28px;
+        padding-top: 28px;
+        padding-left: 23px;
+        padding-bottom: -1px;
+    }
+
+    body > main > section:nth-child(6) > section > article {
+        left: -326px;
+        height: 802px;
+        width: 1395px;
+        flex-direction: column;
+        grid-gap: 40px;
+    }
+
+    body > main > section:nth-child(6) > section > aside {
+        bottom: 23px;
+        left: 271px;
+    }
+
+    body > main > section:nth-child(6) > section > aside > div > button {
+        font-size: 18px;
+        height: 68px;
+        width: 201px;
+        bottom: 5px;
+    }
+
+    body > main > section:nth-child(6) > section > article > div > p {
+        font-size: 20px;
+        height: 43px;
+        bottom: 14px;
+    }
+
+    /*footer*/
+    footer > section > section > h1 {
+        font-size: 28px;
+        padding-top: 28px;
+        padding-left: 23px;
+        padding-bottom: -1px;
+    }
+
+    footer > section > section > p {
+        font-size: 20px;
+        padding-left: 31px;
+        padding-top: 3px;
+    }
+
+    #links {
+        height: 46px;
+        width: 201px;
+        padding-top: 9px;
+        padding-left: 280px;
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    #links > div {
+        background: #0A2640;
+    }
+
+    footer > section > address > ul {
+        padding-bottom: 35px;
+        padding-left: 105px;
+        padding-top: 490px;
+        margin-bottom: 0px;
+    }
+
+    footer > section > address > ul > li {
+        font-size: 19px;
+    }
+
+    footer > section > address > ul > li > i {
+        padding-right: 23px;
+        font-size: 28px;
+    }
+
+    footer > section > article {
+        top: 206px;
+        right: 208px;
+        font-size: 17px;
+    }
+
+    .submit {
+        height: 38px;
+        width: 70px;
+        margin-top: 15px;
+        padding-left: 15px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    footer > section > aside {
+        height: 55px;
+        font-size: 14px;
+    }
+}
+
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+
+    /*header*/
+    header {
+        height: 142px;
+    }
+
+    header > aside > img {
+        width: 108px;
+        padding-left: 32px;
+        padding-top: 39px;
+    }
+
+    header > nav > menu {
+        font-size: 27px;
+        padding-bottom: 49px;
+    }
+
+    /*section 1*/
+    body > main > section:nth-child(1) > section > article > div {
+        height: 63px;
+        width: 40px;
+        left: 896px;
+        top: -215px;
+        flex-direction: column;
+    }
+
+    body > main > section:nth-child(1) > section > article > div > div > a > i {
+        font-size: 40px;
+        padding-left: 9px;
+        padding-top: 31px;
+        color: #00e7ff;
+    }
+
+    body > main > section:nth-child(1) > section > article > p {
+        display: inline-block;
+        font-size: 31px;
+        padding-top: 211px;
+        padding-left: 94px;
+    }
+
+    body > main > section:nth-child(1) > section > article > h1 {
+        font-size: 80px;
+        padding-left: 89px;
+        margin-bottom: 22px;
+        margin-top: 3px;
+    }
+
+    body > main > section:nth-child(1) > section > article > h2 {
+        display: inline-block;
+        font-size: 38px;
+        padding-left: 92px;
+    }
+
+    @keyframes animate {
+        0%, 10%, 100% {
+            width: 0;
+        }
+        70%, 90% {
+            width: 39%;
+        }
+    }
+    body > main > section:nth-child(1) > section > aside {
+        clip-path: ellipse(57% 56% at 57% 62%);
+        height: 581px;
+        width: 811px;
+    }
+
+    /*section 2*/
+    body > main > section:nth-child(2) > section > h1 {
+        font-size: 37px;
+        padding-top: 34px;
+        padding-left: 40px;
+        padding-bottom: -1px;
+    }
+
+    body > main > section:nth-child(2) > section > aside {
+        top: 73px;
+        left: 346px;
+        width: 341px;
+        height: 389px;
+        clip-path: ellipse(53% 49% at 53% 62%);
+    }
+
+    body > main > section:nth-child(2) > section > article {
+        width: 586px;
+        height: 326px;
+        top: 433px;
+        right: 154px;
+        padding-left: 15px;
+        padding-top: 20px;
+        padding-top: 83px;
+        padding-right: 49px;
+        padding-bottom: 40px;
+        padding-left: 58px;
+        line-height: 1.8;
+    }
+
+    body > main > section:nth-child(2) > section > article > p:nth-child(1) {
+        font-size: 21px;
+    }
+
+    body > main > section:nth-child(2) > section > article > p:nth-child(2) {
+        font-size: 20px;
+        bottom: -29px;
+        right: -187px;
+        width: 152px;
+        height: 41px;
+        padding-left: 21px;
+        padding-top: 8px;
+        margin-top: 85px;
+    }
+
+    body > main > section:nth-child(2) > section > div {
+        height: 59px;
+        width: 170px;
+        padding-bottom: 10px;
+        padding-top: 688px;
+        padding-left: 253px;
+        bottom: -134px;
+    }
+
+    body > main > section:nth-child(2) > section > div > div > a > i {
+        font-size: 45px;
+    }
+
+    body > main > section:nth-child(2) > section > div {
+        height: 211px;
+        width: 200px;
+        padding-bottom: 10px;
+        padding-top: 616px;
+        padding-left: 74px;
+        bottom: 81px;
+        flex-direction: column;
+    }
+
+    /*section 3*/
+    body > main > section:nth-child(3) > section > h1 {
+        font-size: 37px;
+        padding-top: 34px;
+        padding-left: 40px;
+        padding-bottom: -1px;
+    }
+
+    body > main > section:nth-child(3) > section > aside {
+        top: 119px;
+        left: 37px;
+        width: 879px;
+        height: 550px;
+    }
+
+    /*section 4*/
+    body > main > section:nth-child(4) > section > h1 {
+        font-size: 37px;
+        padding-top: 34px;
+        padding-left: 40px;
+        padding-bottom: -1px;
+    }
+
+    body > main > section:nth-child(4) > section > aside {
+        position: relative;
+        width: 519px;
+        height: 785px;
+        top: 50px;
+        left: 247px;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 38px;
+        margin-right: 0;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(1) {
+        padding-left: 10px;
+        padding-top: 45px;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(2) {
+        padding-left: 41px;
+        padding-top: 54px;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(3) {
+        padding-left: 50px;
+        padding-top: 48px;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(4) {
+        padding-top: 43px;
+        padding-left: 45px;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(5) {
+        padding-top: 44px;
+        padding-left: 45px;
+    }
+
+    body > main > section:nth-child(4) > section > aside > div:nth-child(6) {
+        padding-top: 54px;
+        padding-left: 46px;
+    }
+
+    body > main > section:nth-child(4) > section > div {
+        left: 40px;
+        bottom: 22px;
+    }
+
+    /*section 5*/
+    body > main > section:nth-child(5) > section > h1 {
+        font-size: 37px;
+        padding-top: 34px;
+        padding-left: 40px;
+        padding-bottom: -1px;
+    }
+
+    body > main > section:nth-child(5) > section > aside > div:nth-child(1) {
+        top: 225px;
+        left: 113px;
+    }
+
+    body > main > section:nth-child(5) > section > aside > div:nth-child(2) {
+        right: 113px;
+        top: 156px;
+    }
+
+    body > main > section:nth-child(5) > section > aside > div:nth-child(3) {
+        bottom: 70px;
+        left: 114px;
+    }
+
+    body > main > section:nth-child(5) > section > aside > div:nth-child(4) {
+        bottom: 131px;
+        right: 114px;
+    }
+
+    /*section 6*/
+    body > main > section:nth-child(6) > section > h1 {
+        font-size: 37px;
+        padding-top: 34px;
+        padding-left: 40px;
+        padding-bottom: -1px;
+    }
+
+    body > main > section:nth-child(6) > section > article {
+        left: -199px;
+    }
+
+    body > main > section:nth-child(6) > section > aside {
+        bottom: 18px;
+        left: 399px;
+    }
+
+
+    /*footer*/
+    footer > section > section > h1 {
+        font-size: 37px;
+        padding-top: 34px;
+        padding-left: 40px;
+        padding-bottom: -1px;
+    }
+
+    footer > section > section > p {
+        font-size: 24px;
+        padding-left: 39px;
+        padding-top: 7px;
+    }
+
+    footer > section > article {
+        top: 206px;
+        right: 346px;
+        font-size: 19px;
+    }
+
+    .submit {
+        width: 81px;
+    }
+
+    footer > section > address > ul {
+        padding-bottom: 35px;
+        padding-left: 105px;
+        padding-top: 446px;
+    }
+
+    #links {
+        height: 52px;
+        width: 201px;
+        padding-top: 0px;
+        padding-left: 394px;
+        gap: 0px;
+        margin-bottom: 0;
+
+    }
+
+    footer > section > address > ul > li > i {
+        padding-right: 23px;
+        font-size: 34px;
+    }
+
+    footer > section > aside {
+        height: 74px;
+        font-size: 16px;
+    }
+
 }
