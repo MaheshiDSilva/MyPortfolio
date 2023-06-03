@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafe</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="assests/css/bootstrap.css" rel="stylesheet">
+    <link href="assests/font-awesome/fontawesome-free-6.4.0-web/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark  p-3 mb-5 " id="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: goldenrod">LEE CAFE </a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item fs-5 p-2" id="btnHome">
+                    <a aria-current="page" class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item fs-5 p-2" id="btnCustomer">
+                    <a class="nav-link" href="#">Customer</a>
+                </li>
+                <li class="nav-item fs-5 p-2" id="btnOrder">
+                    <a class="nav-link" href="#">Order</a>
+                </li>
+                <li class="nav-item fs-5 p-2" id="btnItem">
+                    <a class="nav-link" href="#">Item</a>
+                </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+                <button class="btn btn-outline-warning" type="submit"><i class="fa-solid fa-user-plus"
+                                                                         style="color: #FFFFFF;"></i>Sign Up
+                </button>
+                <button class="btn btn-outline-info" type="submit"><i class="fa-solid fa-right-from-bracket"
+                                                                      style="color: #FFFFFF;"></i>Log Out
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!--<section  id="home" >-->
+<!--    <img class=" position-relative mt-5 pt-5 " style="left: 0;right:0 ;margin: auto" src="img/coffe%20shop.jpg" alt="" width="1519px">-->
+<!--    <img class="position-absolute mt-5 pt-5" src="img/menu%20(2).jpg" alt="" style="right: 0; bottom:0 ;width: 350px" style="bottom: 0">-->
+<!--</section>-->
+
+<section id="home">
+    <section>
+        <section class="position-absolute z-2" style="top: 120px;left: 300px">
+            <h1 style="text-align: center;font-family: 'Domine', serif;color: #84059a;font-size: 50px">Lee Cafe and French Bakery</h1>
+            <div class="carousel slide" id="carouselExampleIndicators" style="width: 900px;height: 500px">
+                <div class="carousel-indicators">
+                    <button aria-current="true" aria-label="Slide 1" class="active"
+                            data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button>
+                    <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators"
+                            type="button"></button>
+                    <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators"
+                            type="button"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img alt="..." class="d-block w-100" src="img/home2.webp">
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="..." class="d-block w-100" src="img/home3.png">
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="..." class="d-block w-100" src="img/home1.png">
+
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators"
+                        type="button">
+                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators"
+                        type="button">
+                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </section>
+    <img alt="" class="opacity-75" height="850px" src="img/background2.jpg" width="1519px">
+</section>
+
+
+<section id="Customer">
+    <div class="container-fluid p4  z-2 position-absolute " style="top: 60px">
+        <h4 class=" p-2 mt-5 fw-bold" style="font-weight: bolder;color:#BF3952;font-size: 38px"><i
+                class="fa-solid fa-user p-3" style="color: #591E29;"></i>Customer
+        </h4>
+        <div class="row">
+            <div class="col-12 col-lg-4 mt-4">
+                <h1 style="color: #0e419a">Customer Registration</h1>
+
+                <div class="form-group pt-2">
+                    <label class="fw-bold" for="txtCustomerID">Customer ID</label>
+                    <input class="form-control" id="txtCustomerID" required type="text">
+                    <span class="control-error" id="lblcusid"></span>
+                </div>
+                <div class="form-group pt-2">
+                    <label class="fw-bold" for="txtCustomerName">Customer Name</label>
+                    <input class="form-control" id="txtCustomerName" type="text">
+                    <span class="control-error" id="lblcusname"></span>
+                </div>
+                <div class="form-group pt-2">
+                    <label class="fw-bold" for="txtCustomerAddress">Customer Address</label>
+                    <input class="form-control" id="txtCustomerAddress" type="text">
+                    <span class="control-error" id="lblcusaddress"></span>
+                </div>
+                <div class="form-group pt-2">
+                    <label class="fw-bold" for="txtCustomerSalary">Customer Salary</label>
+                    <input class="form-control" id="txtCustomerSalary" type="text">
+                    <span class="control-error" id="lblcussalary"></span>
+                </div>
+                <div class="mt-4">
+                    <button class="btn btn-primary mt-3 mb-4 m-sm-2" id="btnSave">Save</button>
+                    <button class="btn btn-danger mt-3 mb-4 m-sm-2" id="btnCusDelete">Delete</button>
+                    <button class="btn btn-warning mt-3 mb-4 m-sm-2" id="btnUpdate">Update</button>
+                    <button class="btn btn-info mt-3 mb-4 m-sm-2" id="btnSearch">Search</button>
+                    <button class="btn btn-success mt-3 mb-4 m-sm-2" id="btn-clear1">Clear All</button>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-lg-7 mt-5" style="">
+                <table class="table table-bordered table-hover">
+                    <thead class="bg-danger text-white">
+                    <tr class="bg-dark" style="color: white">
+                        <th id="colCusId">Customer ID</th>
+                        <th id="colCusName">Customer Name</th>
+                        <th id="colCusAddress">Customer Address</th>
+                        <th id="colCusSalary">Customer Salary</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tblCustomer">
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <img alt="" class="opacity-75" height="800px" src="img/background2.jpg" width="1519px">
+</section>
+
+<section id="order">
+    <div class="container  p4 m-4 z-2 position-absolute">
+        <h4 class=" p-2 mt-3 fw-bold" style="font-weight: bolder;color:#BF3952;font-size: 38px"><i
+                class="fa-solid fa-bags-shopping" style="color: #0a2a61;"></i>Order
+        </h4>
+        <div class="row">
+
+            <!--    col 1-->
+            <div class="col-4">
+                <div class="container p4 m-4 "
+                     style="border: 2px solid #592614;border-radius: 20px ;background: #f1b87c">
+                    <h4 class="" style="font-size: 25px;color: #D95204">Invoice Details</h4>
+                    <div class="row ">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label class="form-label" for="inputOid">Order Id :</label>
+                                    <input class="form-control" id="inputOid" type="order">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="inputDate">Date :</label>
+                                    <input class="form-control" id="inputDate" type="date">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="inputCustomer">Customer :</label>
+                                    <select class="form-select" id="inputCustomer">
+                                        <option selected></option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="inputCid">Customer Id :</label>
+                                    <input class="form-control" id="inputCid" type="customer">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="inputName">Name :</label>
+                                    <input class="form-control" id="inputName" type="customer">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="inputSalary">Salary :</label>
+                                    <input class="form-control" id="inputSalary" type="customer">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="inputAddress">Address :</label>
+                                    <input class="form-control" id="inputAddress" type="customer">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--    col2-->
+            <div class="col-4">
+                <div class="container p4 m-4"
+                     style="border: 2px solid #592614;border-radius: 20px ;background: #f1b87c">
+                    <h4 class="" style="font-size: 25px;color: #9b3b05">Item Select</h4>
+                    <div class="row">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label class="form-label" for="inputItem">Item :</label>
+                                    <select class="form-select" id="inputItem">
+                                        <option selected></option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="inputItem">Item Code :</label>
+                                    <input class="form-control" id="inputItemC" type="customer">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label" for="inputItem">Item Name :</label>
+                                    <input class="form-control" id="inputItemN" type="customer">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label" for="inputIPrice">Price :</label>
+                                    <input class="form-control" id="inputIPrice" type="customer">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label" for="inputItemQty">Qty On Hand :</label>
+                                    <input class="form-control" id="inputItemQty" type="customer">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="inputItem">Order Qty :</label>
+                                    <input class="form-control" id="inputOrderQ" type="customer">
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--    col 3-->
+            <div class="col-4 grid gap-3">
+                <div class="container p4 m-4"
+                     style="border: 2px solid #592614;border-radius: 20px ;background: #f1b87c">
+                    <div class="row">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="row g-3 align-items-center">
+                                    <div class="col-auto">
+                                        <label class="col-form-label " for="inputTotal">Total :</label>
+                                    </div>
+                                    <div class="col-auto ">
+                                        <input aria-labelledby="passwordHelpInline" class="form-control" id="inputTotal"
+                                               type="total">
+                                    </div>
+                                </div>
+                                <div class="row g-3 align-items-center">
+                                    <div class="col-auto">
+                                        <label class="col-form-label" for="inputTotal">SubTotal :</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input aria-labelledby="passwordHelpInline" class="form-control"
+                                               id="inputSTotal"
+                                               type="total">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="inputCash">Cash :</label>
+                                        <input class="form-control" id="inputCash" type="customer">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="inputDiscount">Discount :</label>
+                                        <select class="form-select" id="inputDiscount">
+                                            <option selected></option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="inputCash">Balance :</label>
+                                        <input class="form-control" id="inputBalance" type="customer">
+                                    </div>
+                                </div>
+                                <div class="mx-auto p-2" style="width: 100px;">
+                                    <button class="btn btn-success" style="border: 1px solid black" type="button">
+                                        Purchase
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <table class="table container-fluid table-bordered mt-4 p-4">
+                <thead>
+                <tr class="bg-dark" style="color: white">
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Total</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <img alt="" class="opacity-75" height="800px" src="img/background2.jpg" width="1519px">
+</section>
+
+<section id="item">
+    <div class="container-fluid p4  z-2 position-absolute" style="top: 60px">
+        <h4 class=" p-2 mt-5 fw-bold" style="font-weight: bolder;color:#BF3952;font-size: 38px"><i
+                class="fa-solid fa-cart-shopping p-3" style="color: #591E29;"></i>Item
+        </h4>
+        <div class="row">
+
+            <div class="col-12 col-lg-4 mt-4">
+                <h1 style="color: #0e419a">Item Form</h1>
+
+                <div class="form-group pt-2">
+                    <label class="fw-bold" for="txtCustomerID">Item Code</label>
+                    <input class="form-control" id="txtItemCode" required type="text">
+                    <span class="control-error" id="lblitemid"></span>
+                </div>
+                <div class="form-group pt-2">
+                    <label class="fw-bold" for="txtCustomerName">Item Name</label>
+                    <input class="form-control" id="txtItemName" type="text">
+                    <span class="control-error" id="lblitemname"></span>
+                </div>
+                <div class="form-group pt-2">
+                    <label class="fw-bold" for="txtCustomerAddress">Price</label>
+                    <input class="form-control" id="txtPrice" type="text">
+                    <span class="control-error" id="lblprice"></span>
+                </div>
+                <div class="form-group pt-2">
+                    <label class="fw-bold" for="txtCustomerSalary">Qty</label>
+                    <input class="form-control" id="txtType" type="text">
+                    <span class="control-error" id="lbltype"></span>
+                </div>
+                <div class="mt-4">
+                    <button class="btn btn-primary mt-3 mb-4 m-sm-2" id="btnItemSave">Save</button>
+                    <button class="btn btn-danger mt-3 mb-4 m-sm-2" id="btnItemDelete">Delete</button>
+                    <button class="btn btn-warning mt-3 mb-4 m-sm-2" id="btnItemUpdate">Update</button>
+                    <button class="btn btn-info mt-3 mb-4 m-sm-2" id="btnItemSearch">Search</button>
+                    <button class="btn btn-success mt-3 mb-4 m-sm-2" id="btnItemClear">Clear All</button>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-lg-7 mt-5" style="">
+                <table class="table table-bordered table-hover">
+                    <thead class="bg-danger text-white">
+                    <tr class="bg-dark" style="color: white">
+                        <th scope="col">Item Code</th>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Qty</th>
+                    </thead>
+                    <tbody id="tblItem">
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <img alt="" class="opacity-75" height="800px" src="img/background2.jpg" width="1519px">
+</section>
+
+
+<script src="assests/jquery/jquery-3.7.0.min.js"></script>
+<script>
+    $("#home").css('display', 'block');
+    $("#Customer").css('display', 'none');
+    $("#order").css('display', 'none');
+    $("#item").css('display', 'none');
+
+    $("#btnCustomer").click(function () {
+        $("#Customer").css('display', 'block');
+        $("#home").css('display', 'none');
+        $("#order").css('display', 'none');
+        $("#item").css('display', 'none');
+    });
+
+    $("#btnHome").click(function () {
+        $("#Customer").css('display', 'none');
+        $("#home").css('display', 'block');
+        $("#order").css('display', 'none');
+        $("#item").css('display', 'none');
+    });
+
+    $("#btnOrder").click(function () {
+        $("#Customer").css('display', 'none');
+        $("#home").css('display', 'none');
+        $("#order").css('display', 'block');
+        $("#item").css('display', 'none');
+    });
+
+    $("#btnItem").click(function () {
+        $("#Customer").css('display', 'none');
+        $("#home").css('display', 'none');
+        $("#order").css('display', 'none');
+        $("#item").css('display', 'block');
+    });
+
+
+</script>
+<script src="assests/js/bootstrap.js"></script>
+</body>
+</html>
