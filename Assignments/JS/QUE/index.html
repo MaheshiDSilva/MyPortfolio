@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Queue</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+
+        body {
+            background-color: #011717;
+        }
+
+        section {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            align-items: center;
+            width: 1000px;
+            height: 320px;
+            display: flex;
+
+        }
+
+        section > div {
+            flex-grow: 1;
+            width: 100px;
+            height: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Ubuntu', sans-serif;
+            color: white;
+        }
+
+        section > div:nth-child(1) {
+            align-self: flex-start;
+        }
+
+        section > div:nth-child(6) {
+            align-self: flex-end;
+        }
+
+    </style>
+</head>
+
+<body>
+<h1>Java Script Queue</h1>
+<section>
+    <div id="div1"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div id="div6"></div>
+</section>
+
+<script>
+
+    let colors = ["red", "yellow", "green", "blue", "deeppink", "orange"];
+
+    setInterval(function () {
+        let divArray = document.querySelector("section").children;
+        for (let i = 0; i < colors.length; i++) {
+            divArray[i].style.background = colors[i];
+        }
+        let c = colors.pop();
+        colors.unshift(c);
+    }, 500);
+
+</script>
+
+</body>
+</html>
