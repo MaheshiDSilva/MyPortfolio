@@ -1,4 +1,8 @@
 /*header start*/
+
+::-webkit-scrollbar{
+    width: 0;
+}
 header {
     position: fixed;
     height: 80px;
@@ -47,6 +51,12 @@ header > nav > menu > li > a:hover {
 
 /*main start*/
 /*1st section start*/
+
+/*body{*/
+/*    width: 100vw;*/
+/*    position: relative;*/
+/*    height: calc(100vh*7);*/
+/*}*/
 body > main > section:nth-child(1) > section {
     height: 100vh;
     background-color: #0A2640;
