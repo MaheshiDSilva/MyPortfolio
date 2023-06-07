@@ -436,15 +436,16 @@
 
         let tbody=$("#tblCustomer");
 
-        let tr="<tr>"+tbody+"</tr>";
-        let col1="<td>"+id+"</td>";
-        let col2="<td>"+name+"</td>";
-        let col3="<td>"+address+"</td>";
-        let col4="<td>"+salary+"</td>";
+        // let tr="<tr>"+tbody+"</tr>";
+        // let col1="<td>"+id+"</td>";
+        // let col2="<td>"+name+"</td>";
+        // let col3="<td>"+address+"</td>";
+        // let col4="<td>"+salary+"</td>";
 
 
-        $("tr").append(col1,col2,col3,col4);
-        $("tbody").append(tr);
+        let row=`<tr><td>${id}</td><td>${name}</td><td>${address}</td><td>${salary}</td></tr>`;
+        // $("tr").append(col1,col2,col3,col4);
+        $("tbody").append(row);
 
     });
 
