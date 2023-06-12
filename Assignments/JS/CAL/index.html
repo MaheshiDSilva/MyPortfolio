@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <style>
+        body {
+
+            background-size: cover;
+            width: 90vw;
+            height: 90vh;
+        }
+
+        main{
+            height: 550px;
+            width: 330px;
+        }
+
+        #buttons {
+            background-color: #ade8f4;
+        }
+
+        .keys {
+            height: 50px;
+            width: 50px;
+            background-color: white;
+            opacity: 70%;
+            font-weight: bold;
+            border: none;
+        }
+
+        .special{
+            background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+            color: white;
+            font-weight: bold;
+        }
+
+        .special:hover{
+            color: black !important;
+            border: 1px solid black !important;
+        }
+
+        input:focus{
+            border: none;
+        }
+
+        .keys:hover {
+            color: #3A86FF;
+            border: 1px solid #3A86FF;
+            font-weight: bold;
+        }
+
+        .display {
+            border: none;
+        }
+
+
+        .data{
+            font-size: 20px;
+        }
+
+
+    </style>
+
+</head>
+<body class="d-flex container-fluid align-items-center justify-content-center">
+
+<main class="rounded-5 opacity-75 shadow-lg p-2 bg-black">
+
+    <!-- Display -->
+    <section class="d-flex h-50 flex-column align-items-center justify-content-evenly">
+        <div class="display h-50 w-100 d-flex flex-column align-items-end justify-content-end mt-5">
+            <input class="text-secondary h1 w-100 text-end border-0 bg-black p-2 data" disabled placeholder="">
+            <input class="text-secondary h1 w-100 text-end border-0 bg-black p-2" disabled placeholder="">
+        </div>
+        <div class="clear w-100">
+            <div class="col-3 d-flex align-items-end justify-content-center">
+                <button class="rounded-circle keys bg-danger shadow special" id="btn16">C</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buttons -->
+    <section class="h-50 bg-primary w-100 rounded-5 p-2 shadow" id="buttons">
+        <aside class="row h-25 align-items-center justify-content-center">
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="rounded-circle keys shadow" id="btn0">7</button>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="rounded-circle keys shadow" id="btn1">8</button>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="rounded-circle keys shadow" id="btn2">9</button>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="rounded-circle keys shadow special" id="btn3">+</button>
+            </div>
+
+        </aside>
+        <aside class="row h-25 align-items-center justify-content-center">
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="rounded-circle keys shadow" id="btn4">4</button>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="rounded-circle keys shadow" id="btn5">5</button>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="rounded-circle keys shadow" id="btn6">6</button>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="rounded-circle keys shadow special" id="btn7">-</button>
+            </div>
+        </aside>
+        <aside class="row h-25 align-items-center justify-content-center">
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="rounded-circle keys shadow" id="btn8">1</button>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="rounded-circle keys shadow" id="btn9">2</button>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="rounded-circle keys shadow" id="btn10">3</button>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="rounded-circle keys shadow special" id="btn11">/</button>
+            </div>
+
+        </aside>
+        <aside class="row h-25 align-items-center justify-content-center">
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="rounded-circle keys shadow" id="btn12">0</button>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="rounded-circle keys shadow" id="btn13">.</button>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="rounded-circle keys shadow" id="btn14">=</button>
+            </div>
+
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="rounded-circle keys shadow special" id="btn15">x</button>
+            </div>
+        </aside>
+
+    </section>
+
+</main>
+
+
+<script src="../../assets/jquery/jquery-3.7.0.min.js"></script>
+<script src="../../assets/js/bootstrap.js"></script>
+<script>
+    let number = "";
+    let firstNumber = 0;
+    let lastNumber = 0;
+    let operator = "";
+    let topDisplay = "";
+
+    for (let i = 0; i < 17; i++) {
+        $("#btn" + i).click(function () {
+            let pressedBtn = $("#btn" + i).text();
+            switch (pressedBtn) {
+                case "C":
+                    firstNumber = "";
+                    lastNumber = "";
+                    operator = "";
+                    number = "";
+                    topDisplay = "";
+                    break;
+                case "+":
+                    setOutput("+");
+                    break;
+                case "-":
+                    setOutput("-");
+                    break;
+                case "x":
+                    setOutput("x");
+                    break;
+                case "/":
+                    setOutput("/");
+                    break;
+                case "=":
+                    lastNumber = parseFloat(number);
+                    number = "";
+                    let ans = operations(operator, firstNumber, lastNumber);
+                    number = ans;
+                    break;
+                default:
+                    number += pressedBtn;
+                    topDisplay += pressedBtn;
+            }
+            $(".display input:first-child").val(topDisplay);
+            $(".display input:last-child").val(number);
+        });
+    }
+
+    function operations(operator, firstNumber, lastNumber) {
+        switch (operator) {
+            case "+":
+                return firstNumber + lastNumber;
+            case "-":
+                return firstNumber - lastNumber;
+            case "x":
+                return firstNumber * lastNumber;
+            case "/":
+                return firstNumber / lastNumber;
+        }
+    }
+
+    function setOutput(pressButton) {
+        firstNumber = parseFloat(number);
+        topDisplay += pressButton;
+        number = "";
+        operator = pressButton;
+    }
+
+
+</script>
+</body>
+</html>
