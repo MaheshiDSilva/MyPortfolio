@@ -425,29 +425,7 @@
     });
 
 
-    $("#btnSave").click(function (){
-        // alert("working")
-        let id=$("#txtCustomerID") .val();
-        let name=$("#txtCustomerName").val();
-        let address=$("#txtCustomerAddress").val();
-        let salary=$("#txtCustomerSalary").val();
-
-        console.log(id,name,address,salary);
-
-        let tbody=$("#tblCustomer");
-
-        // let tr="<tr>"+tbody+"</tr>";
-        // let col1="<td>"+id+"</td>";
-        // let col2="<td>"+name+"</td>";
-        // let col3="<td>"+address+"</td>";
-        // let col4="<td>"+salary+"</td>";
-
-
-        let row=`<tr><td>${id}</td><td>${name}</td><td>${address}</td><td>${salary}</td></tr>`;
-        // $("tr").append(col1,col2,col3,col4);
-        $("tbody").append(row);
-
-    });
+    //save customer
 
     // document.getElementById("btnSave").addEventListener("click",function (){
     //     // alert("working")
@@ -486,6 +464,62 @@
     //     tbody.appendChild(tr);
     //
     // });
+
+
+    let customerDetail=[];//literal base array
+    $("#btnSave").click(function (){
+        // alert("working")
+        let id=$("#txtCustomerID") .val();
+        let name=$("#txtCustomerName").val();
+        let address=$("#txtCustomerAddress").val();
+        let salary=$("#txtCustomerSalary").val();
+
+        //set customer details to another way
+        // let customer=[id,name,address,salary];
+        let customerOb={
+            id:id,
+            name:name,
+            address:address,
+            salary:salary
+        }
+
+        //add customer array records to the customer array
+        customerDetail.push(customerOb);
+
+        console.log(id,name,address,salary);
+
+        let tbody=$("#tblCustomer");
+
+            // let row =`<tr>
+            // <td>${id}</td>
+            // <td>${name}</td>
+            //<td>${address}</td>
+            // <td>${salary}</td>
+        // $("#tblCustomer").append(row);
+
+        let row=`<tr><td>${id}</td><td>${name}</td><td>${address}</td><td>${salary}</td></tr>`;
+
+        $("tbody").append(row);
+
+    //    backtick (``) yodannne string literals  karanna ona nisa
+
+    });
+
+  //get all customer
+    $("btnSearch").click(function (){
+        //clear all tbody data before add
+        $("tbody").empty();
+        for(let i=0;i<customerDetail.length;i++){
+            let id=customerDetail[i][0];
+            let name=customerDetail[i][1];
+            let address=customerDetail[i][2];
+            let salary=customerDetail[i][3];
+        }
+
+        let row=`<tr><td>${id}</td><td>${name}</td><td>${address}</td><td>${salary}</td></tr>`;
+        $("tbody").append(row);
+    });
+
 
 
 </script>

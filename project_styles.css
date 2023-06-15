@@ -218,19 +218,31 @@ body > section > article > div > div:nth-child(12) {
 }
 
 body > section > article > div > div:nth-child(13) {
-    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    background: url("img/assignment13.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
 }
 
 body > section > article > div > div:nth-child(14) {
-    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    background: url("img/assignment14.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
 }
 
 body > section > article > div > div:nth-child(15) {
-    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    background: url("img/assignment15.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
 }
 
 body > section > article > div > div:nth-child(16) {
-    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    background: url("img/assignment16.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
 }
 
 span {
