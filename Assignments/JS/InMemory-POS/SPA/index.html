@@ -130,7 +130,7 @@
                     <button class="btn btn-danger mt-3 mb-4 m-sm-2" id="btnCusDelete">Delete</button>
                     <button class="btn btn-warning mt-3 mb-4 m-sm-2" id="btnUpdate">Update</button>
                     <button class="btn btn-info mt-3 mb-4 m-sm-2" id="btnSearch">Search</button>
-                    <button class="btn btn-success mt-3 mb-4 m-sm-2" id="btn-clear1">Clear All</button>
+                    <button class="btn btn-success mt-3 mb-4 m-sm-2" id="btnCusClear">Clear All</button>
                 </div>
 
             </div>
@@ -172,35 +172,28 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label class="form-label" for="inputOid">Order Id :</label>
-                                    <input class="form-control" id="inputOid" type="order">
-                                </div>
-                                <div class="col-md-6">
                                     <label class="form-label" for="inputDate">Date :</label>
                                     <input class="form-control" id="inputDate" type="date">
                                 </div>
                                 <div class="col-md-6">
-                                    <label class="form-label" for="inputCustomer">Customer :</label>
+                                    <label class="form-label" for="inputCustomer">Customer Id :</label>
                                     <select class="form-select" id="inputCustomer">
                                         <option selected></option>
                                         <option>...</option>
                                     </select>
                                 </div>
-                                <div class="col-md-6">
-                                    <label class="form-label" for="inputCid">Customer Id :</label>
-                                    <input class="form-control" id="inputCid" type="customer">
-                                </div>
+
                                 <div class="col-md-6">
                                     <label class="form-label" for="inputName">Name :</label>
                                     <input class="form-control" id="inputName" type="customer">
                                 </div>
                                 <div class="col-md-6">
-                                    <label class="form-label" for="inputSalary">Salary :</label>
-                                    <input class="form-control" id="inputSalary" type="customer">
-                                </div>
-                                <div class="col-md-6">
                                     <label class="form-label" for="inputAddress">Address :</label>
                                     <input class="form-control" id="inputAddress" type="customer">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="inputSalary">Salary :</label>
+                                    <input class="form-control" id="inputSalary" type="customer">
                                 </div>
 
                             </div>
@@ -218,25 +211,21 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label class="form-label" for="inputItem">Item :</label>
+                                    <label class="form-label" for="inputItem">Item Code :</label>
                                     <select class="form-select" id="inputItem">
                                         <option selected></option>
                                         <option>...</option>
                                     </select>
                                 </div>
                                 <div class="col-md-6">
-                                    <label class="form-label" for="inputItem">Item Code :</label>
-                                    <input class="form-control" id="inputItemC" type="customer">
-                                </div>
-                                <div class="col-md-4">
                                     <label class="form-label" for="inputItem">Item Name :</label>
                                     <input class="form-control" id="inputItemN" type="customer">
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <label class="form-label" for="inputIPrice">Price :</label>
                                     <input class="form-control" id="inputIPrice" type="customer">
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <label class="form-label" for="inputItemQty">Qty On Hand :</label>
                                     <input class="form-control" id="inputItemQty" type="customer">
                                 </div>
@@ -244,24 +233,30 @@
                                     <label class="form-label" for="inputItem">Order Qty :</label>
                                     <input class="form-control" id="inputOrderQ" type="customer">
                                 </div>
-
+                                <div class=" col-md-6 mx-auto p-2" style="width: 90px;">
+                                    <button class="btn btn-success" style="border: 1px solid black" type="button">
+                                        Add to cart
+                                    </button>
                             </div>
                         </div>
 
                     </div>
                 </div>
             </div>
+            </div>
 
             <!--    col 3-->
-            <div class="col-4 grid gap-3">
-                <div class="container p4 m-4"
-                     style="border: 2px solid #592614;border-radius: 20px ;background: #f1b87c">
-                    <div class="row">
-                        <div class="container-fluid">
-                            <div class="row">
+                <div class="col-4">
+                    <div class="container p4 m-4"
+                         style="border: 2px solid #592614;border-radius: 20px ;background: #f1b87c">
+                        <h4 class="" style="font-size: 25px;color: #9b3b05">Place Order</h4>
+                        <div class="row">
+                            <div class="container-fluid">
+                                <div class="row">
+
                                 <div class="row g-3 align-items-center">
                                     <div class="col-auto">
-                                        <label class="col-form-label " for="inputTotal">Total :</label>
+                                        <label class="col-form-label " for="inputTotal">Order Id :</label>
                                     </div>
                                     <div class="col-auto ">
                                         <input aria-labelledby="passwordHelpInline" class="form-control" id="inputTotal"
@@ -270,7 +265,7 @@
                                 </div>
                                 <div class="row g-3 align-items-center">
                                     <div class="col-auto">
-                                        <label class="col-form-label" for="inputTotal">SubTotal :</label>
+                                        <label class="col-form-label" for="inputTotal">Total :</label>
                                     </div>
                                     <div class="col-auto">
                                         <input aria-labelledby="passwordHelpInline" class="form-control"
@@ -280,10 +275,6 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <label class="form-label" for="inputCash">Cash :</label>
-                                        <input class="form-control" id="inputCash" type="customer">
-                                    </div>
-                                    <div class="col-md-6">
                                         <label class="form-label" for="inputDiscount">Discount :</label>
                                         <select class="form-select" id="inputDiscount">
                                             <option selected></option>
@@ -291,12 +282,12 @@
                                         </select>
                                     </div>
                                     <div class="col-md-6">
-                                        <label class="form-label" for="inputCash">Balance :</label>
-                                        <input class="form-control" id="inputBalance" type="customer">
+                                        <label class="form-label" for="inputAmount">Amount :</label>
+                                        <input class="form-control" id="inputAmount" type="customer">
                                     </div>
                                 </div>
                                 <div class="mx-auto p-2" style="width: 100px;">
-                                    <button class="btn btn-success" style="border: 1px solid black" type="button">
+                                    <button class="btn btn-danger" style="border: 1px solid black" type="button">
                                         Purchase
                                     </button>
                                 </div>
@@ -305,7 +296,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+
 
         <div class="row">
             <table class="table container-fluid table-bordered mt-4 p-4">
@@ -324,6 +315,7 @@
             </table>
         </div>
     </div>
+    </div>
 
     <img alt="" class="opacity-75" height="800px" src="img/background2.jpg" width="1519px">
 </section>
@@ -339,24 +331,24 @@
                 <h1 style="color: #0e419a">Item Form</h1>
 
                 <div class="form-group pt-2">
-                    <label class="fw-bold" for="txtCustomerID">Item Code</label>
+                    <label class="fw-bold" for="txtItemCode">Item Code</label>
                     <input class="form-control" id="txtItemCode" required type="text">
                     <span class="control-error" id="lblitemid"></span>
                 </div>
                 <div class="form-group pt-2">
-                    <label class="fw-bold" for="txtCustomerName">Item Name</label>
+                    <label class="fw-bold" for="txtItemName">Item Name</label>
                     <input class="form-control" id="txtItemName" type="text">
                     <span class="control-error" id="lblitemname"></span>
                 </div>
                 <div class="form-group pt-2">
-                    <label class="fw-bold" for="txtCustomerAddress">Price</label>
+                    <label class="fw-bold" for="txtPrice">Price</label>
                     <input class="form-control" id="txtPrice" type="text">
                     <span class="control-error" id="lblprice"></span>
                 </div>
                 <div class="form-group pt-2">
-                    <label class="fw-bold" for="txtCustomerSalary">Qty</label>
-                    <input class="form-control" id="txtType" type="text">
-                    <span class="control-error" id="lbltype"></span>
+                    <label class="fw-bold" for="txtQty">Qty</label>
+                    <input class="form-control" id="txtQty" type="text">
+                    <span class="control-error" id="lblqty"></span>
                 </div>
                 <div class="mt-4">
                     <button class="btn btn-primary mt-3 mb-4 m-sm-2" id="btnItemSave">Save</button>
@@ -390,6 +382,17 @@
 
 
 <script src="assests/jquery/jquery-3.7.0.min.js"></script>
+<script src="db/DB.js"></script>
+<script src="controller/CustomerController.js"></script>
+<script src="controller/ItemController.js"></script>
+<script src="controller/OrderController.js"></script>
+<script src="controller/validation/CustomerValidations.js"></script>
+<script src="controller/validation/ItemValidations.js"></script>
+<script src="model/Customer.js"></script>
+<script src="model/Item.js"></script>
+<script src="model/Order.js"></script>
+
+
 <script>
     $("#home").css('display', 'block');
     $("#Customer").css('display', 'none');
@@ -425,7 +428,7 @@
     });
 
 
-    //save customer
+   /* //save customer
 
     // document.getElementById("btnSave").addEventListener("click",function (){
     //     // alert("working")
@@ -518,7 +521,7 @@
 
         let row=`<tr><td>${id}</td><td>${name}</td><td>${address}</td><td>${salary}</td></tr>`;
         $("tbody").append(row);
-    });
+    });*/
 
 
 
