@@ -40,7 +40,7 @@ $("#btnItemDelete").click(function () {
         let response = deleteItem(code);
         if (response) {
             alert("Item Deleted");
-            clearItemInputFields();
+            clearItemsInputFields();
             getAllItems();
         } else {
             alert("Item Not Removed..!");
@@ -54,12 +54,12 @@ $("#btnItemDelete").click(function () {
 $("#btnItemUpdate").click(function () {
     let code = $("#txtItemCode").val();
     updateItem(code);
-    clearItemInputFields();
+    clearItemsInputFields();
 });
 
 //clear btn event
 $("#btnItemClear").click(function () {
-    clearItemInputFields();
+    clearItemsInputFields();
 });
 
 
@@ -85,12 +85,12 @@ function saveItem() {
 
         //add item record to the item array (DB)
         itemDB.push(newItem);
-        clearItemInputFields();
+        clearItemsInputFields();
         getAllItems();
 
     } else {
         alert("Item already exits.!");
-        clearItemInputFields();
+        clearItemsInputFields()
     }
 }
 
@@ -166,9 +166,4 @@ function updateItem(code) {
 
 }
 
-function clearItemInputFields() {
-    $("#txtItemCode,#txtItemName,#txtPrice,#txtQty").val("");
-    $("#txtItemCode,#txtItemName,#txtPrice,#txtQty").css("border", "1px solid #ced4da");
-    $("#txtItemCode").focus();
-    setItemBtn();
-}
+

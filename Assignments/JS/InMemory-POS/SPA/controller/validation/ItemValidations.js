@@ -4,7 +4,6 @@ const ITEM_NAME_REGEX = /^[A-Za-z ]{3,}$/;
 const ITEM_PRICE_REGEX = /^[0-9]{2,}([.][0-9]{2})?$/;
 const ITEM_QTY_REGEX = /^[0-9]+$/;
 
-
 //add validations and text fields to the
 let i_vArray = new Array();
 i_vArray.push({field: $("#txtItemCode"), regEx: ITEM_CODE_REGEX});
@@ -12,7 +11,7 @@ i_vArray.push({field: $("#txtItemName"), regEx: ITEM_NAME_REGEX});
 i_vArray.push({field: $("#txtPrice"), regEx: ITEM_PRICE_REGEX});
 i_vArray.push({field: $("#txtQty"), regEx: ITEM_QTY_REGEX});
 
-function clearItemInputFields() {
+function clearItemsInputFields() {
     $("#txtItemCode,#txtItemName,#txtPrice,#txtQty").val("");
     $("#txtItemCode,#txtItemName,#txtPrice,#txtQty").css("border", "1px solid #ced4da");
     $("#txtItemCode").focus();

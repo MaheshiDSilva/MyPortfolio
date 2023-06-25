@@ -118,6 +118,7 @@ function getAllCustomers() {
         $("#tblCustomer").append(row);
 
         bindTrEvents();
+
     }
 }
 
@@ -160,4 +161,17 @@ function updateCustomer(id) {
         }
     }
 
+}
+
+// Load all customers
+function loadAllCustomers() {
+
+    $("#tblCustomer > tbody").empty();
+
+    for (let customer of customerDB) {
+        $("#tblCustomer > tbody").append(
+            `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td></tr>`
+        );
+    }
+    loadAllCustomerIdsInPurchaseOrder();
 }

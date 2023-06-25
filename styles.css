@@ -996,9 +996,10 @@ span {
 /*RESPONSIVE*/
 
 
+/*
 @media all and (min-width: 320px) and (max-width: 375px) {
 
-    /*header*/
+    !*header*!
     header {
         height: 79px;
     }
@@ -1025,7 +1026,7 @@ span {
         padding-left: 3px;
     }
 
-    /*section 1*/
+    !*section 1*!
     body > main > section:nth-child(1) > section > aside {
         display: none;
     }
@@ -1080,7 +1081,7 @@ span {
         }
     }
 
-    /*section 2*/
+    !*section 2*!
     body > main > section:nth-child(2) > section > h1 {
         font-size: 15px;
         padding-top: 13px;
@@ -1149,7 +1150,7 @@ span {
     body > main > section:nth-child(3) > section > aside {
         width: 309px;
         height: 238px;
-        /*border: 2px solid white;*/
+        !*border: 2px solid white;*!
         left: 4px;
         background: url("img/edu.png");
         background-position: center;
@@ -1193,7 +1194,7 @@ span {
         display: none;
     }
 
-    /*section 4*/
+    !*section 4*!
     body > main > section:nth-child(4) > section > h1 {
         font-size: 15px;
         padding-top: 13px;
@@ -1250,12 +1251,12 @@ span {
         height: 284px;
         left: 50px;
         top: -16px;
-        /*background: url(img/skill.png);*/
+        !*background: url(img/skill.png);*!
         background-position: center;
         background-size: cover;
     }
 
-    /*section 5*/
+    !*section 5*!
     body > main > section:nth-child(5) > section > h1 {
         font-size: 15px;
         padding-top: 13px;
@@ -1294,7 +1295,7 @@ span {
         border: 2px solid #06f5ed;
     }
 
-    /*section 6*/
+    !*section 6*!
     body > main > section:nth-child(6) > section > h1 {
         font-size: 15px;
         padding-top: 13px;
@@ -1339,7 +1340,7 @@ span {
         box-shadow: 0px 0px 0px 0px #777477;
     }
 
-    /*footer*/
+    !*footer*!
     footer > section > section > h1 {
         font-size: 15px;
         padding-top: 10px;
@@ -1447,7 +1448,7 @@ span {
 
 @media all and (min-width: 375px) and (max-width: 425px) {
 
-    /*header*/
+    !*header*!
     header > nav > menu {
         padding-bottom: 17px;
         font-size: 10px;
@@ -1465,7 +1466,7 @@ span {
         padding: 0 7px 0 10px;
     }
 
-    /*section 1*/
+    !*section 1*!
     body > main > section:nth-child(1) > section > aside {
         display: none;
     }
@@ -1520,7 +1521,7 @@ span {
         }
     }
 
-    /*section 2*/
+    !*section 2*!
     body > main > section:nth-child(2) > section > h1 {
         font-size: 15px;
         padding-top: 13px;
@@ -1630,7 +1631,7 @@ span {
         display: none;
     }
 
-    /*section 4*/
+    !*section 4*!
     body > main > section:nth-child(4) > section > h1 {
         font-size: 15px;
         padding-top: 13px;
@@ -1665,31 +1666,31 @@ span {
         display: none;
     }
 
-    /*body > main > section:nth-child(4) > section > div {*/
-    /*    position: absolute;*/
-    /*    bottom: 74px;*/
-    /*    left: -216px;*/
-    /*    padding-top: 80px;*/
-    /*    padding-left: 370px;*/
-    /*    padding-bottom: 0px;*/
-    /*    bottom: 18px;*/
-    /*}*/
-    /*body > main > section:nth-child(4) > section > div > button {*/
-    /*    font-size: 10px;*/
-    /*    border-radius: 12px;*/
-    /*    width: 69px;*/
-    /*    height: 21px;*/
-    /*}*/
-    /*#sec4 {*/
-    /*    width: 240px;*/
-    /*    height: 335px;*/
-    /*    left: 68px;*/
-    /*    top: -16px;*/
-    /*    !*background: url(img/skill.png);*!*/
-    /*    background-position: center;*/
-    /*    background-size: cover;*/
-    /*}*/
-    /*section 5*/
+    !*body > main > section:nth-child(4) > section > div {*!
+    !*    position: absolute;*!
+    !*    bottom: 74px;*!
+    !*    left: -216px;*!
+    !*    padding-top: 80px;*!
+    !*    padding-left: 370px;*!
+    !*    padding-bottom: 0px;*!
+    !*    bottom: 18px;*!
+    !*}*!
+    !*body > main > section:nth-child(4) > section > div > button {*!
+    !*    font-size: 10px;*!
+    !*    border-radius: 12px;*!
+    !*    width: 69px;*!
+    !*    height: 21px;*!
+    !*}*!
+    !*#sec4 {*!
+    !*    width: 240px;*!
+    !*    height: 335px;*!
+    !*    left: 68px;*!
+    !*    top: -16px;*!
+    !*    !*background: url(img/skill.png);*!*!
+    !*    background-position: center;*!
+    !*    background-size: cover;*!
+    !*}*!
+    !*section 5*!
     body > main > section:nth-child(5) > section > h1 {
         font-size: 15px;
         padding-top: 13px;
@@ -1728,7 +1729,7 @@ span {
         border: 2px solid #06f5ed;
     }
 
-    /*section 6*/
+    !*section 6*!
     body > main > section:nth-child(6) > section > h1 {
         font-size: 15px;
         padding-top: 13px;
@@ -1773,7 +1774,7 @@ span {
         box-shadow: 0px 0px 0px 0px #777477;
     }
 
-    /*footer*/
+    !*footer*!
     footer > section > section > h1 {
         font-size: 15px;
         padding-top: 10px;
@@ -1882,7 +1883,7 @@ span {
 
 
 @media all and (min-width: 425px) and (max-width: 768px) {
-    /*header*/
+    !*header*!
     header {
         position: fixed;
         height: 106px;
@@ -1911,7 +1912,7 @@ span {
         padding: 0 4px 0 11px;
     }
 
-    /*section 1*/
+    !*section 1*!
     body > main > section:nth-child(1) > section > aside {
         clip-path: inset(1% 4% 0 1%);
         height: 370px;
@@ -1973,7 +1974,7 @@ span {
         }
     }
 
-    /*section 2*/
+    !*section 2*!
     body > main > section:nth-child(2) > section > h1 {
         font-size: 17px;
         padding-top: 26px;
@@ -2083,7 +2084,7 @@ span {
         display: none;
     }
 
-    /*section 4*/
+    !*section 4*!
     body > main > section:nth-child(4) > section > h1 {
         font-size: 17px;
         padding-top: 26px;
@@ -2118,30 +2119,30 @@ span {
         display: none;
     }
 
-    /*body > main > section:nth-child(4) > section > div {*/
-    /*    position: absolute;*/
-    /*    left: -214px;*/
-    /*    padding-top: 80px;*/
-    /*    padding-left: 370px;*/
-    /*    padding-bottom: 0px;*/
-    /*    bottom: 92px;*/
-    /*}*/
-    /*body > main > section:nth-child(4) > section > div > button {*/
-    /*    font-size: 15px;*/
-    /*    border-radius: 15px;*/
-    /*    width: 110px;*/
-    /*    height: 35px;*/
-    /*}*/
-    /*#sec4 {*/
-    /*    width: 370px;*/
-    /*    height: 522px;*/
-    /*    left: 24px;*/
-    /*    top: 21px;*/
-    /*    !*background: url(img/skill.png);*!*/
-    /*    background-position: center;*/
-    /*    background-size: cover;*/
-    /*}*/
-    /*section 5*/
+    !*body > main > section:nth-child(4) > section > div {*!
+    !*    position: absolute;*!
+    !*    left: -214px;*!
+    !*    padding-top: 80px;*!
+    !*    padding-left: 370px;*!
+    !*    padding-bottom: 0px;*!
+    !*    bottom: 92px;*!
+    !*}*!
+    !*body > main > section:nth-child(4) > section > div > button {*!
+    !*    font-size: 15px;*!
+    !*    border-radius: 15px;*!
+    !*    width: 110px;*!
+    !*    height: 35px;*!
+    !*}*!
+    !*#sec4 {*!
+    !*    width: 370px;*!
+    !*    height: 522px;*!
+    !*    left: 24px;*!
+    !*    top: 21px;*!
+    !*    !*background: url(img/skill.png);*!*!
+    !*    background-position: center;*!
+    !*    background-size: cover;*!
+    !*}*!
+    !*section 5*!
     body > main > section:nth-child(5) > section > h1 {
         font-size: 17px;
         padding-top: 26px;
@@ -2181,7 +2182,7 @@ span {
         border: 3px solid #06f5ed;
     }
 
-    /*section 6*/
+    !*section 6*!
     body > main > section:nth-child(6) > section > h1 {
         font-size: 17px;
         padding-top: 26px;
@@ -2226,7 +2227,7 @@ span {
         box-shadow: 0px 0px 0px 0px #777477;
     }
 
-    /*footer*/
+    !*footer*!
     footer > section > section > h1 {
         font-size: 17px;
         padding-top: 26px;
@@ -2336,7 +2337,7 @@ span {
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
 
-    /*header*/
+    !*header*!
     header {
         height: 160px;
     }
@@ -2351,7 +2352,7 @@ span {
         font-size: 23px;
     }
 
-    /*section 1*/
+    !*section 1*!
     body > main > section:nth-child(1) > section > article > p {
         display: inline-block;
         font-size: 29px;
@@ -2389,7 +2390,7 @@ span {
     body > main > section:nth-child(1) > section > aside {
         clip-path: ellipse(44% 54% at 55% 61%);
         height: 581px;
-        /*width: 806px;*/
+        !*width: 806px;*!
     }
 
     body > main > section:nth-child(1) > section > article > div > div {
@@ -2409,7 +2410,7 @@ span {
         }
     }
 
-    /*section 2*/
+    !*section 2*!
     body > main > section:nth-child(2) > section > h1 {
         font-size: 28px;
         padding-top: 28px;
@@ -2475,7 +2476,7 @@ span {
         font-size: 33px;
     }
 
-    /*section3*/
+    !*section3*!
     body > main > section:nth-child(3) > section > h1 {
         font-size: 28px;
         padding-top: 28px;
@@ -2535,7 +2536,7 @@ span {
         margin-top: 245px;
     }
 
-    /*section 4*/
+    !*section 4*!
     body > main > section:nth-child(4) > section > h1 {
         font-size: 28px;
         padding-top: 28px;
@@ -2543,26 +2544,26 @@ span {
         padding-bottom: -1px;
     }
 
-    /*body > main > section:nth-child(4) > section > aside {*/
-    /*    position: relative;*/
-    /*    width: 470px;*/
-    /*    height: 700px;*/
-    /*    top: 50px;*/
-    /*    left: 146px;*/
-    /*    display: grid;*/
-    /*    grid-template-rows: repeat(3, 1fr);*/
-    /*    grid-template-columns: repeat(2, 1fr);*/
-    /*    grid-gap: 22px;*/
-    /*    margin-right: 0;*/
-    /*}*/
+    !*body > main > section:nth-child(4) > section > aside {*!
+    !*    position: relative;*!
+    !*    width: 470px;*!
+    !*    height: 700px;*!
+    !*    top: 50px;*!
+    !*    left: 146px;*!
+    !*    display: grid;*!
+    !*    grid-template-rows: repeat(3, 1fr);*!
+    !*    grid-template-columns: repeat(2, 1fr);*!
+    !*    grid-gap: 22px;*!
+    !*    margin-right: 0;*!
+    !*}*!
     body > main > section:nth-child(4) > section > article {
         display: none;
     }
 
-    /*body > main > section:nth-child(4) > section > div {*/
-    /*    left: -92px;*/
-    /*}*/
-    /*section 5*/
+    !*body > main > section:nth-child(4) > section > div {*!
+    !*    left: -92px;*!
+    !*}*!
+    !*section 5*!
     body > main > section:nth-child(5) > section > h1 {
         font-size: 28px;
         padding-top: 28px;
@@ -2590,7 +2591,7 @@ span {
         right: 250px;
     }
 
-    /*section 6*/
+    !*section 6*!
     body > main > section:nth-child(6) > section > h1 {
         font-size: 28px;
         padding-top: 28px;
@@ -2624,7 +2625,7 @@ span {
         bottom: 14px;
     }
 
-    /*footer*/
+    !*footer*!
     footer > section > section > h1 {
         font-size: 28px;
         padding-top: 28px;
@@ -2691,260 +2692,260 @@ span {
 
 @media all and (min-width: 1024px) and (max-width: 1440px) {
 
-    /*!*header*!*/
-    /*header {*/
-    /*    height: 142px;*/
-    /*}*/
-    /*header > aside > img {*/
-    /*    width: 108px;*/
-    /*    padding-left: 32px;*/
-    /*    padding-top: 39px;*/
-    /*}*/
-    /*header > nav > menu {*/
-    /*    font-size: 27px;*/
-    /*    padding-bottom: 49px;*/
-    /*}*/
-    /*!*section 1*!*/
-    /*body > main > section:nth-child(1) > section > article > div {*/
-    /*    height: 63px;*/
-    /*    width: 40px;*/
-    /*    left: 896px;*/
-    /*    top: -215px;*/
-    /*    flex-direction: column;*/
-    /*}*/
-    /*body > main > section:nth-child(1) > section > article > div > div > a > i {*/
-    /*    font-size: 40px;*/
-    /*    padding-left: 9px;*/
-    /*    padding-top: 31px;*/
-    /*    color: #00e7ff;*/
-    /*}*/
-    /*body > main > section:nth-child(1) > section > article > p {*/
-    /*    display: inline-block;*/
-    /*    font-size: 31px;*/
-    /*    padding-top: 211px;*/
-    /*    padding-left: 94px;*/
-    /*}*/
-    /*body > main > section:nth-child(1) > section > article > h1 {*/
-    /*    font-size: 80px;*/
-    /*    padding-left: 89px;*/
-    /*    margin-bottom: 22px;*/
-    /*    margin-top: 3px;*/
-    /*}*/
-    /*body > main > section:nth-child(1) > section > article > h2 {*/
-    /*    display: inline-block;*/
-    /*    font-size: 38px;*/
-    /*    padding-left: 92px;*/
-    /*}*/
-    /*@keyframes animate {*/
-    /*    0%, 10%, 100% {*/
-    /*        width: 0;*/
-    /*    }*/
-    /*    70%, 90% {*/
-    /*        width: 39%;*/
-    /*    }*/
-    /*}*/
-    /*body > main > section:nth-child(1) > section > aside {*/
-    /*    clip-path: ellipse(57% 56% at 57% 62%);*/
-    /*    height: 581px;*/
-    /*    width: 811px;*/
-    /*}*/
-    /*!*section 2*!*/
-    /*body > main > section:nth-child(2) > section > h1 {*/
-    /*    font-size: 37px;*/
-    /*    padding-top: 34px;*/
-    /*    padding-left: 40px;*/
-    /*    padding-bottom: -1px;*/
-    /*}*/
-    /*body > main > section:nth-child(2) > section > aside {*/
-    /*    top: 73px;*/
-    /*    left: 346px;*/
-    /*    width: 341px;*/
-    /*    height: 389px;*/
-    /*    clip-path: ellipse(53% 49% at 53% 62%);*/
-    /*}*/
-    /*body > main > section:nth-child(2) > section > article {*/
-    /*    width: 586px;*/
-    /*    height: 326px;*/
-    /*    top: 433px;*/
-    /*    right: 154px;*/
-    /*    padding-left: 15px;*/
-    /*    padding-top: 20px;*/
-    /*    padding-top: 83px;*/
-    /*    padding-right: 49px;*/
-    /*    padding-bottom: 40px;*/
-    /*    padding-left: 58px;*/
-    /*    line-height: 1.8;*/
-    /*}*/
-    /*body > main > section:nth-child(2) > section > article > p:nth-child(1) {*/
-    /*    font-size: 21px;*/
-    /*}*/
-    /*body > main > section:nth-child(2) > section > article > p:nth-child(2) {*/
-    /*    font-size: 20px;*/
-    /*    bottom: -29px;*/
-    /*    right: -187px;*/
-    /*    width: 152px;*/
-    /*    height: 41px;*/
-    /*    padding-left: 21px;*/
-    /*    padding-top: 8px;*/
-    /*    margin-top: 85px;*/
-    /*}*/
-    /*body > main > section:nth-child(2) > section > div {*/
-    /*    height: 59px;*/
-    /*    width: 170px;*/
-    /*    padding-bottom: 10px;*/
-    /*    padding-top: 688px;*/
-    /*    padding-left: 253px;*/
-    /*    bottom: -134px;*/
-    /*}*/
-    /*body > main > section:nth-child(2) > section > div > div > a > i {*/
-    /*    font-size: 45px;*/
-    /*}*/
-    /*body > main > section:nth-child(2) > section > div {*/
-    /*    height: 211px;*/
-    /*    width: 200px;*/
-    /*    padding-bottom: 10px;*/
-    /*    padding-top: 616px;*/
-    /*    padding-left: 74px;*/
-    /*    bottom: 81px;*/
-    /*    flex-direction: column;*/
-    /*}*/
-    /*!*section 3*!*/
-    /*body > main > section:nth-child(3) > section > h1 {*/
-    /*    font-size: 37px;*/
-    /*    padding-top: 34px;*/
-    /*    padding-left: 40px;*/
-    /*    padding-bottom: -1px;*/
-    /*}*/
-    /*body > main > section:nth-child(3) > section > aside {*/
-    /*    top: 119px;*/
-    /*    left: 37px;*/
-    /*    width: 879px;*/
-    /*    height: 550px;*/
-    /*}*/
-    /*!*section 4*!*/
-    /*body > main > section:nth-child(4) > section > h1 {*/
-    /*    font-size: 37px;*/
-    /*    padding-top: 34px;*/
-    /*    padding-left: 40px;*/
-    /*    padding-bottom: -1px;*/
-    /*}*/
-    /*!*body > main > section:nth-child(4) > section > aside {*!*/
-    /*!*    position: relative;*!*/
-    /*!*    width: 519px;*!*/
-    /*!*    height: 785px;*!*/
-    /*!*    top: 50px;*!*/
-    /*!*    left: 247px;*!*/
-    /*!*    display: grid;*!*/
-    /*!*    grid-template-rows: repeat(3, 1fr);*!*/
-    /*!*    grid-template-columns: repeat(2, 1fr);*!*/
-    /*!*    grid-gap: 38px;*!*/
-    /*!*    margin-right: 0;*!*/
-    /*!*}*!*/
-    /*!*body > main > section:nth-child(4) > section > aside > div:nth-child(1) {*!*/
-    /*!*    padding-left: 10px;*!*/
-    /*!*    padding-top: 45px;*!*/
-    /*!*}*!*/
-    /*!*body > main > section:nth-child(4) > section > aside > div:nth-child(2) {*!*/
-    /*!*    padding-left: 41px;*!*/
-    /*!*    padding-top: 54px;*!*/
-    /*!*}*!*/
-    /*!*body > main > section:nth-child(4) > section > aside > div:nth-child(3) {*!*/
-    /*!*    padding-left: 50px;*!*/
-    /*!*    padding-top: 48px;*!*/
-    /*!*}*!*/
-    /*!*body > main > section:nth-child(4) > section > aside > div:nth-child(4) {*!*/
-    /*!*    padding-top: 43px;*!*/
-    /*!*    padding-left: 45px;*!*/
-    /*!*}*!*/
-    /*!*body > main > section:nth-child(4) > section > aside > div:nth-child(5) {*!*/
-    /*!*    padding-top: 44px;*!*/
-    /*!*    padding-left: 45px;*!*/
-    /*!*}*!*/
-    /*!*body > main > section:nth-child(4) > section > aside > div:nth-child(6) {*!*/
-    /*!*    padding-top: 54px;*!*/
-    /*!*    padding-left: 46px;*!*/
-    /*!*}*!*/
-    /*body > main > section:nth-child(4) > section > div {*/
-    /*    left: 40px;*/
-    /*    bottom: 22px;*/
-    /*}*/
-    /*!*section 5*!*/
-    /*body > main > section:nth-child(5) > section > h1 {*/
-    /*    font-size: 37px;*/
-    /*    padding-top: 34px;*/
-    /*    padding-left: 40px;*/
-    /*    padding-bottom: -1px;*/
-    /*}*/
-    /*body > main > section:nth-child(5) > section > aside > div:nth-child(1) {*/
-    /*    top: 225px;*/
-    /*    left: 113px;*/
-    /*}*/
-    /*body > main > section:nth-child(5) > section > aside > div:nth-child(2) {*/
-    /*    right: 113px;*/
-    /*    top: 156px;*/
-    /*}*/
-    /*body > main > section:nth-child(5) > section > aside > div:nth-child(3) {*/
-    /*    bottom: 70px;*/
-    /*    left: 114px;*/
-    /*}*/
-    /*body > main > section:nth-child(5) > section > aside > div:nth-child(4) {*/
-    /*    bottom: 131px;*/
-    /*    right: 114px;*/
-    /*}*/
-    /*!*section 6*!*/
-    /*body > main > section:nth-child(6) > section > h1 {*/
-    /*    font-size: 37px;*/
-    /*    padding-top: 34px;*/
-    /*    padding-left: 40px;*/
-    /*    padding-bottom: -1px;*/
-    /*}*/
-    /*body > main > section:nth-child(6) > section > article {*/
-    /*    left: -199px;*/
-    /*}*/
-    /*body > main > section:nth-child(6) > section > aside {*/
-    /*    bottom: 18px;*/
-    /*    left: 399px;*/
-    /*}*/
-    /*!*footer*!*/
-    /*footer > section > section > h1 {*/
-    /*    font-size: 37px;*/
-    /*    padding-top: 34px;*/
-    /*    padding-left: 40px;*/
-    /*    padding-bottom: -1px;*/
-    /*}*/
-    /*footer > section > section > p {*/
-    /*    font-size: 24px;*/
-    /*    padding-left: 39px;*/
-    /*    padding-top: 7px;*/
-    /*}*/
-    /*footer > section > article {*/
-    /*    top: 206px;*/
-    /*    right: 346px;*/
-    /*    font-size: 19px;*/
-    /*}*/
-    /*.submit {*/
-    /*    width: 81px;*/
-    /*}*/
-    /*footer > section > address > ul {*/
-    /*    padding-bottom: 35px;*/
-    /*    padding-left: 105px;*/
-    /*    padding-top: 446px;*/
-    /*}*/
-    /*#links {*/
-    /*    height: 52px;*/
-    /*    width: 201px;*/
-    /*    padding-top: 0px;*/
-    /*    padding-left: 394px;*/
-    /*    gap: 0px;*/
-    /*    margin-bottom: 0;*/
-    /*}*/
-    /*footer > section > address > ul > li > i {*/
-    /*    padding-right: 23px;*/
-    /*    font-size: 34px;*/
-    /*}*/
-    /*footer > section > aside {*/
-    /*    height: 74px;*/
-    /*    font-size: 16px;*/
-    /*}*/
+    !*header*!
+    header {
+        height: 142px;
+    }
+    header > aside > img {
+        width: 108px;
+        padding-left: 32px;
+        padding-top: 39px;
+    }
+    header > nav > menu {
+        font-size: 27px;
+        padding-bottom: 49px;
+    }
+    !*section 1*!
+    body > main > section:nth-child(1) > section > article > div {
+        height: 63px;
+        width: 40px;
+        left: 896px;
+        top: -215px;
+        flex-direction: column;
+    }
+    body > main > section:nth-child(1) > section > article > div > div > a > i {
+        font-size: 40px;
+        padding-left: 9px;
+        padding-top: 31px;
+        color: #00e7ff;
+    }
+    body > main > section:nth-child(1) > section > article > p {
+        display: inline-block;
+        font-size: 31px;
+        padding-top: 211px;
+        padding-left: 94px;
+    }
+    body > main > section:nth-child(1) > section > article > h1 {
+        font-size: 80px;
+        padding-left: 89px;
+        margin-bottom: 22px;
+        margin-top: 3px;
+    }
+    body > main > section:nth-child(1) > section > article > h2 {
+        display: inline-block;
+        font-size: 38px;
+        padding-left: 92px;
+    }
+    @keyframes animate {
+        0%, 10%, 100% {
+            width: 0;
+        }
+        70%, 90% {
+            width: 39%;
+        }
+    }
+    body > main > section:nth-child(1) > section > aside {
+        clip-path: ellipse(57% 56% at 57% 62%);
+        height: 581px;
+        width: 811px;
+    }
+    !*section 2*!
+    body > main > section:nth-child(2) > section > h1 {
+        font-size: 37px;
+        padding-top: 34px;
+        padding-left: 40px;
+        padding-bottom: -1px;
+    }
+    body > main > section:nth-child(2) > section > aside {
+        top: 73px;
+        left: 346px;
+        width: 341px;
+        height: 389px;
+        clip-path: ellipse(53% 49% at 53% 62%);
+    }
+    body > main > section:nth-child(2) > section > article {
+        width: 586px;
+        height: 326px;
+        top: 433px;
+        right: 154px;
+        padding-left: 15px;
+        padding-top: 20px;
+        padding-top: 83px;
+        padding-right: 49px;
+        padding-bottom: 40px;
+        padding-left: 58px;
+        line-height: 1.8;
+    }
+    body > main > section:nth-child(2) > section > article > p:nth-child(1) {
+        font-size: 21px;
+    }
+    body > main > section:nth-child(2) > section > article > p:nth-child(2) {
+        font-size: 20px;
+        bottom: -29px;
+        right: -187px;
+        width: 152px;
+        height: 41px;
+        padding-left: 21px;
+        padding-top: 8px;
+        margin-top: 85px;
+    }
+    body > main > section:nth-child(2) > section > div {
+        height: 59px;
+        width: 170px;
+        padding-bottom: 10px;
+        padding-top: 688px;
+        padding-left: 253px;
+        bottom: -134px;
+    }
+    body > main > section:nth-child(2) > section > div > div > a > i {
+        font-size: 45px;
+    }
+    body > main > section:nth-child(2) > section > div {
+        height: 211px;
+        width: 200px;
+        padding-bottom: 10px;
+        padding-top: 616px;
+        padding-left: 74px;
+        bottom: 81px;
+        flex-direction: column;
+    }
+    !*section 3*!
+    body > main > section:nth-child(3) > section > h1 {
+        font-size: 37px;
+        padding-top: 34px;
+        padding-left: 40px;
+        padding-bottom: -1px;
+    }
+    body > main > section:nth-child(3) > section > aside {
+        top: 119px;
+        left: 37px;
+        width: 879px;
+        height: 550px;
+    }
+    !*section 4*!
+    body > main > section:nth-child(4) > section > h1 {
+        font-size: 37px;
+        padding-top: 34px;
+        padding-left: 40px;
+        padding-bottom: -1px;
+    }
+    !*body > main > section:nth-child(4) > section > aside {*!
+    !*    position: relative;*!
+    !*    width: 519px;*!
+    !*    height: 785px;*!
+    !*    top: 50px;*!
+    !*    left: 247px;*!
+    !*    display: grid;*!
+    !*    grid-template-rows: repeat(3, 1fr);*!
+    !*    grid-template-columns: repeat(2, 1fr);*!
+    !*    grid-gap: 38px;*!
+    !*    margin-right: 0;*!
+    !*}*!
+    !*body > main > section:nth-child(4) > section > aside > div:nth-child(1) {*!
+    !*    padding-left: 10px;*!
+    !*    padding-top: 45px;*!
+    !*}*!
+    !*body > main > section:nth-child(4) > section > aside > div:nth-child(2) {*!
+    !*    padding-left: 41px;*!
+    !*    padding-top: 54px;*!
+    !*}*!
+    !*body > main > section:nth-child(4) > section > aside > div:nth-child(3) {*!
+    !*    padding-left: 50px;*!
+    !*    padding-top: 48px;*!
+    !*}*!
+    !*body > main > section:nth-child(4) > section > aside > div:nth-child(4) {*!
+    !*    padding-top: 43px;*!
+    !*    padding-left: 45px;*!
+    !*}*!
+    !*body > main > section:nth-child(4) > section > aside > div:nth-child(5) {*!
+    !*    padding-top: 44px;*!
+    !*    padding-left: 45px;*!
+    !*}*!
+    !*body > main > section:nth-child(4) > section > aside > div:nth-child(6) {*!
+    !*    padding-top: 54px;*!
+    !*    padding-left: 46px;*!
+    !*}*!
+    body > main > section:nth-child(4) > section > div {
+        left: 40px;
+        bottom: 22px;
+    }
+    !*section 5*!
+    body > main > section:nth-child(5) > section > h1 {
+        font-size: 37px;
+        padding-top: 34px;
+        padding-left: 40px;
+        padding-bottom: -1px;
+    }
+    body > main > section:nth-child(5) > section > aside > div:nth-child(1) {
+        top: 225px;
+        left: 113px;
+    }
+    body > main > section:nth-child(5) > section > aside > div:nth-child(2) {
+        right: 113px;
+        top: 156px;
+    }
+    body > main > section:nth-child(5) > section > aside > div:nth-child(3) {
+        bottom: 70px;
+        left: 114px;
+    }
+    body > main > section:nth-child(5) > section > aside > div:nth-child(4) {
+        bottom: 131px;
+        right: 114px;
+    }
+    !*section 6*!
+    body > main > section:nth-child(6) > section > h1 {
+        font-size: 37px;
+        padding-top: 34px;
+        padding-left: 40px;
+        padding-bottom: -1px;
+    }
+    body > main > section:nth-child(6) > section > article {
+        left: -199px;
+    }
+    body > main > section:nth-child(6) > section > aside {
+        bottom: 18px;
+        left: 399px;
+    }
+    !*footer*!
+    footer > section > section > h1 {
+        font-size: 37px;
+        padding-top: 34px;
+        padding-left: 40px;
+        padding-bottom: -1px;
+    }
+    footer > section > section > p {
+        font-size: 24px;
+        padding-left: 39px;
+        padding-top: 7px;
+    }
+    footer > section > article {
+        top: 206px;
+        right: 346px;
+        font-size: 19px;
+    }
+    .submit {
+        width: 81px;
+    }
+    footer > section > address > ul {
+        padding-bottom: 35px;
+        padding-left: 105px;
+        padding-top: 446px;
+    }
+    #links {
+        height: 52px;
+        width: 201px;
+        padding-top: 0px;
+        padding-left: 394px;
+        gap: 0px;
+        margin-bottom: 0;
+    }
+    footer > section > address > ul > li > i {
+        padding-right: 23px;
+        font-size: 34px;
+    }
+    footer > section > aside {
+        height: 74px;
+        font-size: 16px;
+    }
 
-}
+}*/

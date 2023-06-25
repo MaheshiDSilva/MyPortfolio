@@ -9,4 +9,6 @@ var itemDB = [
     {code:"I00-002",name:"Burger Bun",price: 120.00,qty: 130},
     {code:"I00-003",name:"Sandwich",price: 100.00,qty: 200}
 ];
-var orderDB = [];
+var cartDB = [];
+
+var ordersDB = [];
