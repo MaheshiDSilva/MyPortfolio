@@ -29,7 +29,6 @@ body > section > aside {
     flex-direction: row;
     justify-content: space-around;
     grid-gap: 70px;
-    overflow: hidden;
 
 }
 
