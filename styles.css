@@ -801,6 +801,23 @@ body > main > section:nth-child(6) > section > article > div:nth-child(3) {
     box-shadow: 15px 15px 16px 10px #777477;
 }
 
+body > main > section:nth-child(6) > section > article > div > a {
+    position: absolute;
+    display: inline-block;
+    color: #082fee;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: #ffffff;
+    /*border-radius: 20px;*/
+    height: 35px;
+    bottom: 41px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+}
+
 body > main > section:nth-child(6) > section > article > div > p {
     position: absolute;
     display: inline-block;
@@ -815,6 +832,7 @@ body > main > section:nth-child(6) > section > article > div > p {
     text-align: center;
     left: 0;
     right: 0;
+
 }
 
 /*6th section end*/

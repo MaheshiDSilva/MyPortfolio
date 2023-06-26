@@ -76,6 +76,22 @@ body > section > aside > div:nth-child(3) {
     box-shadow: 15px 15px 16px 10px #777477;
 }
 
+body > section > aside > div > a {
+    position: absolute;
+    display: inline-block;
+    color: #082fee;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: #ffffff;
+    height: 35px;
+    bottom: 41px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+}
+
 body > section > aside > div > p {
     position: absolute;
     display: inline-block;
@@ -85,10 +101,11 @@ body > section > aside > div > p {
     font-weight: bold;
     background-color: #ffffff;
     height: 35px;
-    bottom: 15px;
+    bottom: 41px;
     text-align: center;
     left: 0;
     right: 0;
+
 }
 
 body > section > article > h1 {
