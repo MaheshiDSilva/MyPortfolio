@@ -6,19 +6,31 @@ $(function () {
 
 function loadAllCustomerIdsInPurchaseOrder() {
     $("#cmbCustomerId").empty();
-    $("#cmbCustomerId").append(`<option disabled selected hidden>Customer ID</option>`);
+    $("#cmbCustomerId").append(`<option>Customer ID</option>`);
 
     for (let customer of customerDB) {
         $("#cmbCustomerId").append(`<option>${customer.id}</option>`);
     }
 }
 
+// var selectElement = $("#cmbCustomerId");
+//
+// function updateSelector() {
+//     selectElement.empty();
+//     $.each(customerDB, function (index, customer) {
+//         var option = $("<option>")
+//             .val(customer.id)
+//             .text(customer.id);
+//         selectElement.append(option);
+//     });
+// }
+
 function loadAllItemCodesInPurchaseOrder() {
     $("#cmbItemCode").empty();
     $("#cmbItemCode").append(`<option disabled selected hidden>Item Code</option>`);
 
     for (let item of itemDB) {
-        $("#cmbItemCode").append(`<option>${item.itemCode}</option>`);
+        $("#cmbItemCode").append(`<option>${item.code}</option>`);
     }
 }
 
@@ -190,6 +202,7 @@ function purchaseOrder() {
 
 function clearCustomerAndItemTexts() {
     loadAllCustomerIdsInPurchaseOrder();
+    // updateSelector();
     loadAllItemCodesInPurchaseOrder();
     $("#inputName ,#inputAddress, #inputSalary, #inputItemName, #inputItemQty, #inputIPrice, #inputOrderQty").val("");
 }

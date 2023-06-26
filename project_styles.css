@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+    width: 0;
+}
+
 body > section {
     height: 100vh;
     background-color: white;
@@ -24,7 +28,7 @@ body > section > aside {
     left: 60px;
     top: 10px;
     height: 500px;
-    width: 1330px;
+    width: 1400px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -103,7 +107,7 @@ body > section > article > div {
     left: 60px;
     top: 50px;
     height: 1000px;
-    width: 1300px;
+    width: 1400px;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(4, 1fr);
